@@ -15,7 +15,7 @@ const Login = () => {
               <button style={{ backgroundColor: "#eee0b1" }} className='btn ' >LOGIN</button>
               <button  className='btn'>REGISTER</button>
             </div>
-            <h1 className='fw-bold'>WELCOME tilak</h1>
+            <h1 className='fw-bold'>WELCOME </h1>
             <p>Please Log in to your Account</p>
             <div className="input-group">
               <input type="email" placeholder="Username or E-mail" />
