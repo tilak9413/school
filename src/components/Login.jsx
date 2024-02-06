@@ -7,7 +7,7 @@ const Login = () => {
     <div className="container">
       <div style={{ height: "100vh" }} className='row align-items-center justify-content-center'>
       <div  className=" row login-container rounded-4  col-sm-12 p-5 ">
-          <div style={{placeItems:"center"}} className=" d-flex col-xl-6 left">
+          <div style={{placeItems:"center"}} className=" col-xl-6 left">
             <img className='img-fluid' src="public\image\WhatsApp Image 2024-01-17 at 10.48.14_ab26d616.jpg" alt="" />
           </div>
           <div className="col-6 p-md-4 col-md-12 col-12 col-xl-6 height">

@@ -32,7 +32,6 @@
   /* padding-block: 5% 2%; */
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
-
 }
 
 .left {
@@ -160,4 +159,11 @@ width: 345px !important;
   
   
 }
+@media screen and (max-width: 280px)
 
+{
+  .login-container
+  {
+    width: 140px !important;
+  }
+}
