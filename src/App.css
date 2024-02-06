@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.container-fluid {
   font-family: piazzolla;
   background: url(public/image/bg.jpg);
   background-position: center;

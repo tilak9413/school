@@ -3,7 +3,7 @@ import React from 'react'
 const Login = () => {
   return (
     <>
-    <div >
+    <div className='container-fluid' >
     <div className="container">
       <div style={{ height: "100vh" }} className='row align-items-center justify-content-center'>
       <div  className=" row login-container rounded-4  col-sm-12 p-5 ">
