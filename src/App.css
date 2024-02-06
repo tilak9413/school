@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.container-fluid {
+.container-flui {
   font-family: piazzolla;
   background: url(public/image/bg.jpg);
   background-position: center;
@@ -159,4 +159,29 @@ width: 345px !important;
   {
     width: 140px !important;
   }
+}
+
+/* dashborad */
+.bgcolor
+{
+  background-color: #f3feff;
+}
+.list-items
+{
+  list-style: none;
+}
+
+.logosize
+{
+  width: 50px;
+}
+.dashcolor
+{
+  background-color: #81a4ff;
+}
+.iconcolor
+{
+  color:#5a5a5a ;
+  
+  
 }
