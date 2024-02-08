@@ -1,4 +1,6 @@
 import React from 'react'
+import Navbar from './Navbar';
+import Welcome from './Welcome';
 import { MdEmail } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
@@ -68,7 +70,7 @@ function Dashborad() {
   return (
     <>
       <div className=' container-fluid p-0 m-0 col-sm-12  '>
-        <div className='' >
+        {/* <div className='' >
           <div className=" col-sm-12 w-100 bgcolordash border   ">
             <div className='row  dashcolor text-end'>
               <ul className='d-flex justify-content-end gap-5 fs-3 list-items'>
@@ -80,15 +82,16 @@ function Dashborad() {
               </ul>
             </div>
           </div>
-        </div>
-
-        <div className='container col-sm-12 padding-top ' >
+        </div> */}
+        <Navbar/>
+        <Welcome/>
+        {/* <div className='container col-sm-12 padding-top ' >
           <div className='col-sm-12 row border rounded-4 bgcolordash '>
             <div className='top' >
               <p className='fw-bold' >welcome back tilak kumar</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className='container padding-top' >
         <div className='col-sm-12'>
