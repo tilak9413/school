@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Title</title>
+    <style>
+        .gauto-promo-area {
+
+position: relative;
+background: url(../img/promo_bg.jpg) no-repeat fixed 0 0/cover;
+z-index: 1;
+
+}
+.gauto-promo-area:after {
+
+position: absolute;
+
+content: "";
+
+top: 0;
+
+right: 0;
+
+width: 100%;
+
+height: 100%;
+
+background: rgb(146 10 95 / 74%) none repeat scroll 0 0;
+
+z-index: -1;
+
+}
+
+
+
+.promo-box-left1 {
+
+position: relative;
+
+z-index: 1;
+
+padding-top: 70px;
+
+padding-bottom: 50px;
+
+}
+
+
+
+.promo-box-right1 {
+
+padding: 72px 0
+
+}
+.promo-box-left1:after {
+
+position: absolute;
+
+background: #041a63 none repeat scroll 0 0;
+
+content: "";
+
+top: 0;
+
+right: 55%;
+
+width: 2030px;
+
+height: 100%;
+
+-webkit-transform: skewX(45deg);
+
+transform: skewX(45deg);
+
+z-index: -1;
+
+}
+
+
+
+.promo-box-left1:before {
+
+position: absolute;
+
+background: #fff none repeat scroll 0 0;
+
+content: "";
+
+top: 0;
+
+right: -5%;
+
+width: 70px;
+
+height: 100%;
+
+-webkit-transform: skewX(45deg);
+
+transform: skewX(45deg);
+
+z-index: -1;
+
+}
+
+
+
+.promo-box-right1 h3 {
+
+font-size: 34px;
+
+color: #fff;
+
+letter-spacing: 1px;
+
+margin-bottom: 15px;
+
+-webkit-transition: all 0.4s ease 0s;
+
+transition: all 0.4s ease 0s;
+
+display: inline-block;
+
+text-transform: capitalize;
+
+font-family: "Poppins", sans-serif;
+
+font-weight: 600;
+
+line-height: 50px;
+
+}
+    </style>
+</head>
+<body>
+    
+    <section class="gauto-promo-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                <div class="promo-box-left1"> 
+                    <img class="img-thumbnail " style="width: 320px;"
+                            src="https://www.bing.com/th?id=OIP.hF8_3tDhRrZvxm-j1kZwgwHaE9&w=142&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="promo car" />
+                         </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="promo-box-right1">
+                        <h3>Programmes / Latest Projects</h3><br>
+                        <p style="font-size: 21px; color:rgba(50,50,50,1);">Friends of Mann Deshi &#8211; Empowering women,
+                            transforming lives. </p><br>
+                        <a href="{{ config('app.url') }}programmes" class="gauto-btn">View Programmes</a>
+                        <a href="{{ config('app.url') }}projects" class="gauto-btn">View Latest Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

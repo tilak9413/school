@@ -8,12 +8,15 @@ import Home from './components/home.jsx'
 import Register from './components/Register.jsx'
 import About from './components/About.jsx'
 import Contextprovider from './context/loginContext/contextprovider.jsx'
+import Dashborad from './components/Dashborad.jsx'
+import Office from './components/office.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path='/' element={<Home />} >   
-         <Route path='about' element={<About />} />
+      <Route path='/' element={<App />} >   
+         <Route path='dashboard' element={<Dashborad />} />
+         <Route path='office' element={<Office />} />
        </Route>
       <Route path='login' element={<Login />} />
       <Route path='Register' element={<Register />} />

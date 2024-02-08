@@ -170,18 +170,204 @@ width: 345px !important;
 {
   list-style: none;
 }
-
+.marginright
+{
+  margin-right: 200px;
+}
 .logosize
 {
   width: 50px;
 }
-.dashcolor
+.liwidth
 {
-  background-color: #81a4ff;
+  width: 190px;
+  padding: 10px;
 }
+ul li:hover
+{
+  background-color: #5a5a5a;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 12px;
+  color: #fff;
+  
+} 
 .iconcolor
+{
+  color: #81a4ff;
+}
+.dashcolor
 {
   color:#5a5a5a ;
   
-  
 }
+.fonsizelogo
+{
+  font-size: 13px;
+} 
+.bgcolordash
+{
+  background-color: #81a4ff;
+}
+
+.welcomedash
+{
+  height: 200px;
+  max-height: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3d3d3d;
+}
+.welcomedash , .top
+{
+  margin-top: 15px;
+
+}
+.inputedit
+{
+  border: none;
+  outline: none;
+
+ 
+
+
+}
+.inputedit1
+{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 12px;
+    padding: 2px;
+}
+.fontsizeicon
+{
+  font-size: 30px;
+}
+.textcenter
+{
+  place-items: center;
+  font-weight: 500;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.h
+{
+  height: 200px;
+
+}
+.formselect
+{
+  width: 100px !important;
+}
+.border-bottum
+{
+  border-bottom: 1px solid #3d3d3d;
+}
+.douth
+{
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #81a4ff;
+}
+.douth1
+{
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #5a5a5a;
+}
+.mt
+{
+  margin-top: 10px;
+}
+
+
+
+.react-calendar { 
+  width: 400px;
+  max-width: 100%;
+  background-color: #fff;
+ }
+ .react-calendar__navigation button {
+  color: #6f48eb;
+  min-width: 44px;
+  background: none;
+  /* font-size: 16px; */
+  /* margin-top: 8px; */
+  background-color: #fff;
+ }
+ abbr[title] {
+  text-decoration: none;
+ }
+ .react-calendar__tile:enabled:hover,
+ .react-calendar__tile:enabled:focus {
+  /* background: #f8f8fa; */
+  color: #6f48eb;
+  border-radius: 6px;
+ }
+ .react-calendar__tile--now {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+ }
+ .react-calendar__tile--now:enabled:hover,
+ .react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+ }
+ .react-calendar__tile--active {
+  background: #6f48eb;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+ }
+ .react-calendar__tile--active:enabled:hover,
+ .react-calendar__tile--active:enabled:focus {
+  background: #6f48eb;
+  color: white;
+ }
+ .react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+ }
+ .react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+ }
+ .react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #6f48eb;
+  color: white;
+ }
+ .react-calendar__tile--rangeEnd {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #6f48eb;
+  color: white;
+ }
+
+ .columsgap
+ {
+  column-gap: 200px;
+ }
+  button
+ {
+  background-color: #fff;
+  border: none;
+ }
+
+ 
+ .padding-top
+ {
+  padding-top: 8px;
+ }
+ .notegap
+ {
+  column-gap: 190px;
+ }
