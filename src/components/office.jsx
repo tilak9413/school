@@ -1,12 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import Navbar from "./Navbar";
+import Welcome from "./Welcome";
+import '../App.css';
 function Office() {
   return (
     <>
-    <h1>office</h1>
-    <div>office</div>
+      <Navbar/>
+      <Welcome/>
     </>
-  )
+  );
 }
 
-export default Office
+export default Office;
