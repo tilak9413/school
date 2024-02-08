@@ -12,6 +12,7 @@ import { Chart as chartJS, ArcElement, Legend, Tooltip } from 'chart.js';
 import Calendar from 'react-calendar';
 // import React, { useState } from "react";
 import Chart from "react-apexcharts";
+import '../assets/styledashboradcss/dashborad.css';
 
 
 
@@ -69,61 +70,51 @@ function Dashborad() {
   }
   return (
     <>
-      <div className=' container-fluid p-0 m-0 col-sm-12  '>
-        {/* <div className='' >
-          <div className=" col-sm-12 w-100 bgcolordash border   ">
-            <div className='row  dashcolor text-end'>
-              <ul className='d-flex justify-content-end gap-5 fs-3 list-items'>
-                <li >
-                  <MdEmail className='iconcolor text-white' />
-                </li>
-                <li><IoMdNotifications className='iconcolor text-white' /></li>
-                <li className='mx-4' ><FaUserCircle className='iconcolo text-white' /></li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
+    
+  <div className=' container-fluid p-0 m-0 col-sm-12  '>
         <Navbar/>
+        {/* <div className='container' >
         <Welcome/>
-        {/* <div className='container col-sm-12 padding-top ' >
-          <div className='col-sm-12 row border rounded-4 bgcolordash '>
-            <div className='top' >
-              <p className='fw-bold' >welcome back tilak kumar</p>
-            </div>
-          </div>
         </div> */}
+       
       </div>
-      <div className='container padding-top' >
-        <div className='col-sm-12'>
-          <div className=' row col-sm-12  d-flex '>
-            <div className='col-sm-5 p-2' >
-              <div className='d-flex align-items-center bg-white  border inputedit1 '>
-                <input className='inputedit w-100 ' type="text" placeholder='Search' />
+      <div className=' container padding-top' >
+        <div className=' row col-sm-12 justify-content-between  align-items-center'>
+            <div className='col-sm-3'>
+              <div className='d-flex align-items-center  bg-white   inputedit1 '>
+                <input className='inputedit w-100 inputheight-home' type="text" placeholder='Search' />
                 <IoIosSearch className=' fontsizeicon fw-bold' />
               </div>
             </div>
-            <div className='col-sm-7  gap-5 row ' >
-              <div className='col-sm-4 bgcolordash h-100  d-flex rounded-3 textcenter ' >
-                <div className='d-flex align-items-center gap-2 ' >
-                  <PiStudentFill className=' fs-3 boder' /> <span>Total student <span>5400</span></span>
+            <div className='col-sm-7 row justify-content-end gap-5  ' >
+              <div className='col-sm-5  border  bgcolordash h-100  d-flex rounded-3 textcenter ' >
+                <div className='d-flex align-items-center gap-2 card-height ' >
+                  <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
                 </div>
 
               </div>
-              <div className='col-sm-4 bg-dark text-white rounded-3 h-100  d-flex textcenter ' >
-                <div className='d-flex align-items-center gap-2'>
-                  <FaChalkboardTeacher className='fs-3 boder' />  <span> Total teachers</span>
+              <div className='col-sm-5  bg-dark text-white rounded-3 h-100  d-flex textcenter ' >
+                <div className='d-flex align-items-center card-height gap-2'>
+                  <FaChalkboardTeacher className='fs-3 boder' />  <span> Total teachers : <span> 64654</span> </span>
                 </div>
-
               </div>
             </div>
-
-          </div>
         </div>
       </div>
-      <div className='container-fluid' >
-        <div className='row col-sm-12 columsgap p-3' >
-          <div className='col-sm-5 border inputedit1   bg-white  d-flex'>
-            <div className='  col-sm-12 '>
+        <div className='container-fluid col-sm-12  mt-1  ' >
+         <div className='row justify-content-between   p-3 col-sm-12 justify-content-end' > 
+    <div className="col-xl-8 inputedit1  bg-white ">
+        <Chart
+           series={state.series}
+          options={state.options}
+       
+          type="bar"
+          width="800"
+          height={310}
+        />
+      </div>
+      <div className='col-sm-4  '>
+            <div className='   col-sm-12 border inputedit1   border  bg-white h-100 w-100 '>
               <div className=' d-flex  align-items-center justify-content-between col-sm-12 p-1 '>
                 <span className=' fw-bold border-bottum' >Student</span>
                 <select value="optionsState" className='formselect form-select '>
@@ -132,12 +123,14 @@ function Dashborad() {
                   <option value="C">Cranberry</option>
                 </select>
               </div>
-              <div className=' mb-4 h col-sm-12 d-flex justify-content-evenly  gap-5 '>
-                <Doughnut
-                  data={data}
+              <div className='  h align-items-center col-sm-12 d-flex justify-content-evenly '>
+                <Doughnut className=''
+                   data={data}
                   options={options}
+                  width={200}
+                  height={200}
                 />
-                <div className=' p-4 '>
+                <div className='  '>
                   <div className='d-flex gap-1'>
                     <div className='douth1   mt'></div><p className='fs-5' >  Girls:  <span>20</span></p>
                   </div>
@@ -146,12 +139,9 @@ function Dashborad() {
                   </div>
                 </div>
               </div>
-
             </div>
-
-
-          </div>
-          <div className='col-sm-5 border bg-white inputedit1 '>
+      </div>
+      <div className='col-sm-6 border bg-white inputedit1 '>
             <div className='app w-100 '>
               <div className='calendar-container p-2 '>
                 <p className=' fw-bold border-bottum'>Calendar</p>
@@ -176,60 +166,10 @@ function Dashborad() {
                   </p>
                 )}
             </div>
-
-          </div>
-
-        </div>
-        <div className='container col-sm-12'>
-    <div className='row  notegap '>
-    <div className="col-md-5 inputedit1 ">
-        <Chart
-           series={state.series}
-          options={state.options}
-       
-          type="bar"
-          width="520"
-          height={220}
-        />
+ </div>
+      </div> 
       </div>
-      <div className='col-md-5 border inputedit1 p-3' >
-        <div>
-          <p className='fw-bold'>Notices:</p>
-        </div>
-        <div>
-          <ol className='d-grid gap-3' >
-            <li>
-              School Annual Function on 20 Dec 2022 
-            </li>
-            <li>
-              School Annual Function on 20 Dec 2022
-            </li>
-            <li>
-              School Annual Function on 20 Dec 2022
-            </li>
-            <li>
-              School Annual Function on 20 Dec 2022
-            </li>
-            <li>
-              School Annual Function on 20 Dec 2022
-            </li>
-            <li>
-              School Annual Function on 20 Dec 2022
-            </li>
-            <li>
-              School Annual Function on 20 Dec 2022
-            </li>
-          </ol>
-        </div>
-
-      </div>
-    </div>
-   </div>
-      </div>
-  
-     
       <div>
-
       </div>
     </>
 
