@@ -24,12 +24,12 @@ function Home() {
             </div>
             <div className='mt-4'>
               <ul className='list-items d-grid gap-1 '>
-                <li className='liwidth' > <MdDashboard className='iconcolor' /><Link to="dashboard">Dashboard</Link></li>
-                <li className='liwidth'> <HiOfficeBuilding className='iconcolor' /> <Link to="office">Office</Link></li>
-                <li className='liwidth' >  <MdPlaylistAddCircle className='iconcolor' /> <Link to="Admissions" >Admissions</Link> </li>
-                <li className='liwidth'>  <PiStudentBold className='iconcolor' />  <Link to="students" >Students</Link> </li>
-                <li  className='liwidth' > <MdClass className='iconcolor' /> <Link to="classes">Classes</Link> </li>
-                <li  className='liwidth' > <FaHandPointer className='iconcolor' />  <Link to="attendance">Attendance</Link> </li>
+                <li className='liwidth  ' > <MdDashboard className='iconcolor' /><Link className='text-decoration-none text-dark' to="dashboard">Dashboard</Link></li>
+                <li className='liwidth'> <HiOfficeBuilding className='iconcolor' /> <Link className='text-decoration-none text-dark' to="office">Office</Link></li>
+                <li className='liwidth' >  <MdPlaylistAddCircle className='iconcolor' /> <Link className='text-decoration-none text-dark' to="Admissions" >Admissions</Link> </li>
+                <li className='liwidth'>  <PiStudentBold className='iconcolor' />  <Link className='text-decoration-none text-dark' to="students" >Students</Link> </li>
+                <li  className='liwidth' > <MdClass className='iconcolor' /> <Link className='text-decoration-none text-dark' to="classes">Classes</Link> </li>
+                <li  className='liwidth' > <FaHandPointer className='iconcolor' />  <Link className='text-decoration-none text-dark' to="attendance">Attendance</Link> </li>
                 <li  className='liwidth' > <FaMoneyCheckDollar className='iconcolor' /> Fees</li>
                 <li  className='liwidth' >  <PiExamFill className='iconcolor' /> Exams</li>
                 <li className='liwidth' > <FaMoneyCheck className='iconcolor' />  Staff payroll</li>
