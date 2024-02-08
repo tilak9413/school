@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Welcome = () => {
+const Welcome = (props) => {
   return (
     <>
     <div className="welcome-bar bgcolordash rounded p-2">

@@ -401,3 +401,7 @@ ul li Link:hover
   /* margin-left: 10px; */
   background-color: white;  
 }
+
+.smallbolding{
+  font-weight: 500;
+}
