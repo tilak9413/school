@@ -24,6 +24,7 @@ function Home() {
             </div>
             <div className='mt-4'>
               <ul className='list-items d-grid gap-1 '>
+
                 <li className='liwidth' > <MdDashboard className='iconcolor' /><Link className='text-decoration-none text-dark' to="dashboard">Dashboard</Link></li>
                 <li className='liwidth'> <HiOfficeBuilding className='iconcolor' /> <Link className='text-decoration-none text-dark' to="office">Office</Link></li>
                 <li className='liwidth' >  <MdPlaylistAddCircle className='iconcolor' /><Link className='text-decoration-none text-dark' to="admissions">Admissions</Link> </li>
@@ -34,6 +35,7 @@ function Home() {
                 <li  className='liwidth' >  <PiExamFill className='iconcolor' /> <Link className='text-decoration-none text-dark' to="exams">Exams</Link> </li>
                 <li className='liwidth' > <FaMoneyCheck className='iconcolor' /> <Link className='text-decoration-none text-dark' to="staffpayroll">Staff payroll</Link> </li>
                 <li className='liwidth' > <RiAccountPinCircleFill className='iconcolor' /> <Link className='text-decoration-none text-dark' to="account"> Account</Link> </li>
+
               </ul>
             </div>
           </div>

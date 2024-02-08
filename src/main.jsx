@@ -18,6 +18,7 @@ import Staffpayroll from './components/staffpayroll.jsx'
 import Student from './components/Student.jsx'
 import Attendence from './components/Attendence.jsx'
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
