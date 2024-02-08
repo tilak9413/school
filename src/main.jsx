@@ -10,14 +10,22 @@ import About from './components/About.jsx'
 import Contextprovider from './context/loginContext/contextprovider.jsx'
 import Dashborad from './components/Dashborad.jsx'
 import Office from './components/office.jsx'
-
+import Admissions from './components/Admissions.jsx'
+import Students from './components/Students.jsx'
+import Classes from './components/Classes.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path='/' element={<App />} >   
          <Route path='dashboard' element={<Dashborad />} />
          <Route path='office' element={<Office />} />
+         <Route path='Admissions' element={<Admissions />} />
+         <Route path='Students' element={<Students />} />
+         <Route path='Classes' element={<Classes />} />
+         <Route path='home' element={<Home />} />
+
        </Route>
+
       <Route path='login' element={<Login />} />
       <Route path='Register' element={<Register />} />
     </>
