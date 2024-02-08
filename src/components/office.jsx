@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Welcome from "./Welcome";
+import Navbar from "../comp/Navbar";
+import Welcome from "../comp/Welcome";
 import '../App.css';
 function Office() {
   return (

@@ -380,3 +380,24 @@ ul li Link:hover
  {
   column-gap: 190px;
  }
+
+ .inputit{
+  background-color: #cfcfcf5c;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  padding-inline: 5px;
+  font-size: 13px;
+  color: grey;
+  font-weight: 500;
+  padding: 5px 11px;
+  outline: none;
+  margin-left: 0px;
+}
+
+.banking{
+  width: fit-content !important; 
+  top: -14px;
+  padding-inline: 8px;
+  /* margin-left: 10px; */
+  background-color: white;  
+}

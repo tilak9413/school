@@ -10,7 +10,7 @@ import Contextprovider from './context/loginContext/contextprovider.jsx'
 import Dashborad from './components/Dashborad.jsx'
 import Office from './components/office.jsx'
 import Account from './components/Account.jsx'
-import Addmition from './components/Addmition.jsx'
+import Admissions from './components/Admissions.jsx'
 import Class from './components/Class.jsx'
 import Exams from './components/exams.jsx'
 import Fees from './components/Fees.jsx'
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
          <Route path='' element={<Dashborad />} />
          <Route path='office' element={<Office />} />
          <Route path='account' element={<Account />} />
-         <Route path='admissions' element={<Addmition />} />
+         <Route path='admissions' element={<Admissions />} />
          <Route path='class' element={<Class />} />
          <Route path='exams' element={<Exams />} />
          <Route path='fees' element={<Fees />} />

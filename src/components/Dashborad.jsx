@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar';
-import Welcome from './Welcome';
+import Navbar from '../comp/Navbar';
+import Welcome from '../comp/Welcome';
 import { MdEmail } from "react-icons/md";
 import { IoMdNotifications } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
