@@ -24,16 +24,16 @@ function Home() {
             </div>
             <div className='mt-4'>
               <ul className='list-items d-grid gap-1 '>
-                <li className='liwidth' > <MdDashboard className='iconcolor' /><Link to="dashboard">Dashboard</Link></li>
-                <li className='liwidth'> <HiOfficeBuilding className='iconcolor' /> <Link to="office">Office</Link></li>
-                <li className='liwidth' >  <MdPlaylistAddCircle className='iconcolor' /> Admissions</li>
-                <li className='liwidth'>  <PiStudentBold className='iconcolor' />   Students</li>
-                <li  className='liwidth' > <MdClass className='iconcolor' /> Class</li>
-                <li  className='liwidth' > <FaHandPointer className='iconcolor' />  Attendance</li>
-                <li  className='liwidth' > <FaMoneyCheckDollar className='iconcolor' /> Fees</li>
-                <li  className='liwidth' >  <PiExamFill className='iconcolor' /> Exams</li>
-                <li className='liwidth' > <FaMoneyCheck className='iconcolor' />  Staff payroll</li>
-                <li className='liwidth' > <RiAccountPinCircleFill className='iconcolor' /> Account</li>
+                <li className='liwidth' > <MdDashboard className='iconcolor' /><Link className='text-decoration-none text-dark' to="dashboard">Dashboard</Link></li>
+                <li className='liwidth'> <HiOfficeBuilding className='iconcolor' /> <Link className='text-decoration-none text-dark' to="office">Office</Link></li>
+                <li className='liwidth' >  <MdPlaylistAddCircle className='iconcolor' /><Link className='text-decoration-none text-dark' to="admissions">Admissions</Link> </li>
+                <li className='liwidth'>  <PiStudentBold className='iconcolor' /> <Link className='text-decoration-none text-dark' to="student">Students</Link>  </li>
+                <li  className='liwidth' > <MdClass className='iconcolor' />  <Link className='text-decoration-none text-dark' to="class">Class</Link></li>
+                <li  className='liwidth' > <FaHandPointer className='iconcolor' />  <Link className='text-decoration-none text-dark' to="attendance">Attendance</Link> </li>
+                <li  className='liwidth' > <FaMoneyCheckDollar className='iconcolor' /> <Link className='text-decoration-none text-dark' to="fees">Fees</Link> </li>
+                <li  className='liwidth' >  <PiExamFill className='iconcolor' /> <Link className='text-decoration-none text-dark' to="exams">Exams</Link> </li>
+                <li className='liwidth' > <FaMoneyCheck className='iconcolor' /> <Link className='text-decoration-none text-dark' to="staffpayroll">Staff payroll</Link> </li>
+                <li className='liwidth' > <RiAccountPinCircleFill className='iconcolor' /> <Link className='text-decoration-none text-dark' to="account"> Account</Link> </li>
               </ul>
             </div>
           </div>

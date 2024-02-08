@@ -6,10 +6,17 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Login from "./components/Login";
 import Home from './components/home.jsx'
 import Register from './components/Register.jsx'
-import About from './components/About.jsx'
 import Contextprovider from './context/loginContext/contextprovider.jsx'
 import Dashborad from './components/Dashborad.jsx'
 import Office from './components/office.jsx'
+import Account from './components/Account.jsx'
+import Addmition from './components/Addmition.jsx'
+import Class from './components/Class.jsx'
+import Exams from './components/exams.jsx'
+import Fees from './components/Fees.jsx'
+import Staffpayroll from './components/staffpayroll.jsx'
+import Student from './components/Student.jsx'
+import Attendence from './components/Attendence.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +24,14 @@ const router = createBrowserRouter(
       <Route path='/' element={<App />} >   
          <Route path='dashboard' element={<Dashborad />} />
          <Route path='office' element={<Office />} />
+         <Route path='account' element={<Account />} />
+         <Route path='admissions' element={<Addmition />} />
+         <Route path='class' element={<Class />} />
+         <Route path='exams' element={<Exams />} />
+         <Route path='fees' element={<Fees />} />
+         <Route path='staffpayroll' element={<Staffpayroll />} />
+         <Route path='student' element={<Student />} />
+         <Route path='attendance' element={<Attendence />} />
        </Route>
       <Route path='login' element={<Login />} />
       <Route path='Register' element={<Register />} />

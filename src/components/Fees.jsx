@@ -1,11 +1,11 @@
 import React from 'react'
 
-function About() {
+function Fees() {
   return (
     <div>
-      it is about
+      Fees
     </div>
   )
 }
 
-export default About
+export default Fees
