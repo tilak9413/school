@@ -7,6 +7,10 @@ import { FaRegCopy } from "react-icons/fa";
 import { MdMenuBook } from "react-icons/md";
 import "../App.css";
 import "./office.css";
+import { FaCaretDown } from "react-icons/fa";
+import { FaPen } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
+// import { Dropdown } from "react-bootstrap";
 
 function Office() {
   return (
@@ -15,7 +19,7 @@ function Office() {
       <Welcome />
       <div className="mx-auto mt-3" style={{ maxWidth: "95%" }}>
         <div className="row gap-5">
-          <div className="col-3 border rounded-3 overflow-hidden p-0">
+          <div className="col border rounded-3 overflow-hidden p-0">
             <table className="table m-0">
               <thead>
                 <tr>
@@ -43,7 +47,7 @@ function Office() {
               </tbody>
             </table>
           </div>
-          <div className="col-7 border rounded-3 overflow-hidden">
+          <div className="col-8 border rounded-3 overflow-hidden">
             <form>
               <div className="row">
                 <div className="col p-0">
@@ -82,7 +86,7 @@ function Office() {
           </div>
         </div>
         <div className="row mt-4">
-          <div className="col-11 p-0">
+          <div className="col p-0">
             <div className="col border rounded-3 overflow-hidden">
               <form>
                 <div className="row">
@@ -107,9 +111,42 @@ function Office() {
                     <MdMenuBook className="fs-4 icons" />
                   </div>
                 </div>
-                <div className="row">
+                <div className="row  px-4 pb-3 border-bottom">
                   <div className="col">
-
+                  <button className="btn border d-flex align-items-center gap-4">Permission Type <FaCaretDown className="fs-5"/></button>
+                  </div>
+                </div>
+                <div className="row py-2 px-3">
+                  <div className="col">
+                    <ol>
+                      <div className="row py-2">
+                        <div className="col d-flex justify-content-between">
+                          <li>General Permission</li>
+                          <span className="d-flex gap-4">
+                          <FaPen className="fs-5 icons"/>
+                          <RxCross1 className="fs-4 icons"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="row py-2">
+                        <div className="col d-flex justify-content-between">
+                          <li>General Permission</li>
+                          <span className="d-flex gap-4">
+                          <FaPen className="fs-5 icons"/>
+                          <RxCross1 className="fs-4 icons"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="row py-2">
+                        <div className="col d-flex justify-content-between">
+                          <li>General Permission</li>
+                          <span className="d-flex gap-4">
+                          <FaPen className="fs-5 icons"/>
+                          <RxCross1 className="fs-4 icons"/>
+                          </span>
+                        </div>
+                      </div>
+                    </ol>
                   </div>
                 </div>
               </form>
