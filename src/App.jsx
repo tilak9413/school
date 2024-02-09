@@ -10,12 +10,8 @@ const App = () => {
       <div style={{ height: "100vh" }} className='container-fluid col-xl-12 p-0  '>
         <div className='row col-sm-12 p-0'>
    <Home />
-   
-   <div className='col-xl-10 p-0'>
-
+   <div className='col-xl-10  position-absolute end-0 p-0'>
    <Outlet />
-
-
 </div>
 </div>
 </div>

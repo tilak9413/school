@@ -1,10 +1,5 @@
 import React from 'react'
 import Navbar from '../comp/Navbar';
-import Welcome from '../comp/Welcome';
-import { MdEmail } from "react-icons/md";
-import { IoMdNotifications } from "react-icons/io";
-import { FaUserCircle } from "react-icons/fa";
-import { IoIosSearch } from "react-icons/io";
 import { PiStudentFill } from "react-icons/pi";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { Doughnut } from 'react-chartjs-2';
@@ -61,7 +56,8 @@ function Dashborad() {
         ],
         bodercolror: [
           'rgba(255, 99, 132, 1)',
-        ]
+        ],
+
       }
     ]
   }
@@ -73,51 +69,50 @@ function Dashborad() {
 
       <div className=' container-fluid p-0 m-0 col-sm-12  '>
         <Navbar />
-        {/* <div className='container' >
-        <Welcome/>
-        </div> */}
-
       </div>
 
       <div className='container-fluid  ' >
         <div className='col-sm-12 row p-3  d-flex  align-items-center justify-content-between' >
-          <div className='col-sm-6 row cardgap justify-content-evenly gap-5 '>
-          <div className='col-sm-5    bgcolordash   d-flex rounded-3 textcenter ' >
-              <div className='d-flex align-items-center gap-2 card-height ' >
+          {/* <div className='col-sm-6  row cardgap justify-content-evenly '> */}
+          <div className='col-sm-3   bgcolordash   d-flex rounded-3 textcenter ' >
+              <div className='d-flex align-items-center gap-2  card-height ' >
                 <PiStudentFill className=' fs-3 ' /> <span>Total student : <span>5400</span></span>
               </div>
             </div>
-            <div className='col-sm-5  bgcolordash h-100  d-flex rounded-3 textcenter ' >
+            {/* <div className='col-sm3  bgcolordash h-100  d-flex rounded-3 textcenter ' >
+              <div className='d-flex align-items-center  gap-2 card-height ' >
+                <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
+              </div>
+            {/* </div> */}
+          {/* </div>  */}
+          {/* <div className='col-sm-6  row justify-content-evenly columngap  ' > */}
+            <div className='col-sm-3  border  bgcolordash h-100  d-flex rounded-3 textcenter ' >
               <div className='d-flex align-items-center gap-2 card-height ' >
                 <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
               </div>
 
             </div>
-          </div>
-          <div className='col-sm-6  row justify-content-evenly columngap  ' >
-            <div className='col-sm-5  border  bgcolordash h-100  d-flex rounded-3 textcenter ' >
-              <div className='d-flex align-items-center gap-2 card-height ' >
-                <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
-              </div>
-
-            </div>
-            <div className='col-sm-5  bg-dark text-white rounded-3 h-100  d-flex textcenter ' >
+            <div className='col-sm-3   bg-dark text-white rounded-3 h-100  d-flex textcenter ' >
               <div className='d-flex align-items-center card-height gap-2'>
                 <FaChalkboardTeacher className='fs-3 boder' />  <span> Total teachers : <span> 64654</span> </span>
               </div>
             </div>
+          {/* </div> */}
           </div>
-          <div className="col-xl-8  chart-height inputedit1 mt-3  bg-white ">
-            <Chart
+          </div>
+          <div className='container-fluid'>
+            <div className='row' >
+            <div  className="col-xl-8 col-sm-5 col-md-6 col-12 media overflow-scroll chart-height inputedit1 mt-3  bg-white ">
+            <Chart style={{width:"800px"}}  className="mediachange"
               series={state.series}
               options={state.options}
 
               type="bar"
-              width="800"
+              // width=""
               height={300}
             />
           </div>
-          <div className='col-sm-4 mt-3  '>
+          <div className='col-xl-4 col-sm-6 col-12 col-md-6  mt-3  '>
             <div className='   col-sm-12 border inputedit1     bg-white '>
               <div className=' d-flex  align-items-center justify-content-between col-sm-12 p-1 '>
                 <span className=' fw-bold border-bottum' >Student</span>
@@ -136,16 +131,34 @@ function Dashborad() {
                 />
                 <div className='  '>
                   <div className='d-flex gap-1'>
-                    <div className='douth1   mt'></div><p className='fs-5' >  Girls:  <span>20</span></p>
+                    <div className='douth1 d-none  mt'></div><p className='fs-5' >  Girls:  <span>20</span></p>
                   </div>
                   <div className='d-flex gap-1'>
-                    <div className='douth mt'></div> <p className='fs-5' >Boys:  <span>50</span> </p>
+                    <div className='douth mt d-none'></div> <p className='fs-5' >Boys:  <span>50</span> </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className='col-sm-4 bg-white celender mt-3 inputedit1   '>
+          <div className='col-sm-6 bg-white dispaly d-none celender mt-3 inputedit1   '>
+            <div className='app h-25   '>
+              <div className='calendar-container  '>
+                <p className=' fw-bold border-bottum'>Calendar</p>
+                <Calendar className="text-center"
+                  onChange={setDate}
+                  value={date}
+                  selectRange={true}
+                />
+              </div>
+
+            </div>
+          </div>
+            </div>
+          </div>
+
+        <div className='container'>
+          <div className='row'>
+          <div className='col-sm-4 changecelender bg-white celender mt-3 inputedit1   '>
             <div className='app h-25   '>
               <div className='calendar-container  '>
                 <p className=' fw-bold border-bottum'>Calendar</p>
@@ -202,8 +215,8 @@ function Dashborad() {
               </div>
             </div>
           </div>
+          </div>
         </div>
-      </div>
     </>
 
   )
