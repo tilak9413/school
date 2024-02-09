@@ -1,0 +1,9 @@
+td{
+  cursor: pointer;
+}
+.icons{
+  cursor: pointer;
+}
+.icons:hover{
+  color: orange;
+}
