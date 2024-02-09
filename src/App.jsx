@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 const App = () => {
   return (
     <>
-       <div className='bg-light'>
+       <div className='bg-white'>
       <div style={{ height: "100vh" }} className='container-fluid col-xl-12 p-0  '>
         <div className='row col-sm-12 p-0'>
    <Home />

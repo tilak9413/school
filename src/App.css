@@ -405,3 +405,7 @@ ul li Link:hover
 .smallbolding{
   font-weight: 500;
 }
+.headee{
+  margin-left: -12px;
+  width: 101% !important;
+}
