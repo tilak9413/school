@@ -1,0 +1,16 @@
+.pointer{
+    cursor: pointer;
+}
+
+#upload-photo{
+    height: 200px !important;
+}
+
+.imga{
+    height: 200px;
+}
+
+.activeaddmition{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
