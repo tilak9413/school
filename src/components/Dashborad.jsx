@@ -78,15 +78,23 @@ function Dashborad() {
         </div> */}
 
       </div>
-      <div className=' container padding-top' >
-        <div className=' row col-sm-12 justify-content-between  align-items-center'>
-          <div className='col-sm-3'>
-            <div className='d-flex align-items-center  bg-white   inputedit1 '>
-              <input className='inputedit w-100 inputheight-home' type="text" placeholder='Search' />
-              <IoIosSearch className=' fontsizeicon fw-bold' />
+
+      <div className='container-fluid  ' >
+        <div className='col-sm-12 row p-3  d-flex  align-items-center justify-content-between' >
+          <div className='col-sm-6 row cardgap justify-content-evenly gap-5 '>
+          <div className='col-sm-5    bgcolordash   d-flex rounded-3 textcenter ' >
+              <div className='d-flex align-items-center gap-2 card-height ' >
+                <PiStudentFill className=' fs-3 ' /> <span>Total student : <span>5400</span></span>
+              </div>
+            </div>
+            <div className='col-sm-5  bgcolordash h-100  d-flex rounded-3 textcenter ' >
+              <div className='d-flex align-items-center gap-2 card-height ' >
+                <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
+              </div>
+
             </div>
           </div>
-          <div className='col-sm-7 row justify-content-end gap-5  ' >
+          <div className='col-sm-6  row justify-content-evenly columngap  ' >
             <div className='col-sm-5  border  bgcolordash h-100  d-flex rounded-3 textcenter ' >
               <div className='d-flex align-items-center gap-2 card-height ' >
                 <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
@@ -99,11 +107,7 @@ function Dashborad() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className='container col-sm-12  mt-1 ' >
-        <div className='row justify-content-between   p-3 col-sm-12 justify-content-end' >
-          <div className="col-xl-8 c chart-height inputedit1  bg-white ">
+          <div className="col-xl-8  chart-height inputedit1 mt-3  bg-white ">
             <Chart
               series={state.series}
               options={state.options}
@@ -113,7 +117,7 @@ function Dashborad() {
               height={300}
             />
           </div>
-          <div className='col-sm-4   '>
+          <div className='col-sm-4 mt-3  '>
             <div className='   col-sm-12 border inputedit1     bg-white '>
               <div className=' d-flex  align-items-center justify-content-between col-sm-12 p-1 '>
                 <span className=' fw-bold border-bottum' >Student</span>
@@ -141,11 +145,7 @@ function Dashborad() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div iv className=' container  '>
-        <div className='col-sm-12 row p-3 '>
-          <div  className='col-sm-4 bg-white celender  inputedit1   '>
+          <div className='col-sm-4 bg-white celender mt-3 inputedit1   '>
             <div className='app h-25   '>
               <div className='calendar-container  '>
                 <p className=' fw-bold border-bottum'>Calendar</p>
@@ -155,16 +155,16 @@ function Dashborad() {
                   selectRange={true}
                 />
               </div>
-             
+
             </div>
           </div>
-          <div className='col-sm-8  '>
+          <div className='col-sm-8 mt-3  '>
             <div className='inputedit1 bg-white' >
-            <div className='p-1'>
+              <div className='p-1'>
                 <p className='fw-bold'>Notices:</p>
               </div>
-              <div className='d-flex ' >
-                
+              <div className='d-flex  gap-5 align-items-center ' >
+
                 <div>
                   <ol className='d-grid gap-3'>
                     <li>
@@ -180,7 +180,7 @@ function Dashborad() {
                       School Annual Function on 20 Dec 2022
                     </li>
                   </ol>
-                  
+
                 </div>
                 <div>
                   <ol className='d-grid gap-3' >
@@ -197,18 +197,13 @@ function Dashborad() {
                       School Annual Function on 20 Dec 2022
                     </li>
                   </ol>
-                  
+
                 </div>
               </div>
             </div>
-       
-       
           </div>
-
-
         </div>
       </div>
-
     </>
 
   )

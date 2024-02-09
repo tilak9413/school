@@ -3,7 +3,7 @@ import React from 'react'
 function Fees() {
   return (
     <div>
-      Fees
+      Fees tilak 
     </div>
   )
 }
