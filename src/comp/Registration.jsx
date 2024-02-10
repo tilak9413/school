@@ -42,8 +42,7 @@ function Registration() {
        <h3 className='text-center text-decoration-underline my-3 pt-2 py-2 text-success '>Student Registration Form</h3>
         <div className='p-3 rounded m-3 shadow bg-white border'>
 
-          <div className="row border-bottom pb-5">
-            <span>Full Name</span>
+          <div className="row  ">
             <div className="col-sm-4">
               <InputComp name='FIRST NAME' placeholder="Enter First Name" />
             </div>
@@ -79,7 +78,7 @@ function Registration() {
               </div>
             </div>
           </div>
-          <div className="row border-bottom pb-3 pt-3 ">
+          <div className="row  pt-3 ">
             <div className="col-sm-12">
               <InputComp name='PRESENT ADDRESS' />
             </div>
@@ -97,7 +96,7 @@ function Registration() {
           </div>
 
 
-          <div className="row border-bottom pb-3 pt-3 ">
+          <div className="row pt-3 ">
             <div className="col-sm-12">
               <InputComp name='PERMANENT ADDRESS' />
             </div>
