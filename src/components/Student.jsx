@@ -22,7 +22,6 @@ function Student() {
         {
           active ==4 ? <Timetable/> : ""
         }
-      
       </div>
    
     </>
