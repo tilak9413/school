@@ -16,11 +16,11 @@ function Office() {
   return (
     <>
       <Navbar />
-      <Welcome />
-      <div className="mx-auto mt-3" style={{ maxWidth: "95%" }}>
+      {/* <Welcome /> */}
+      <div className="mx-auto mt-3 px-4">
         <div className="row gap-5">
-          <div className="col border rounded-3 overflow-hidden p-0">
-            <table className="table m-0">
+          <div className="col">
+            <table className="table m-0 rounded overflow-hidden">
               <thead>
                 <tr>
                   <th scope="col" style={{ backgroundColor: "#81a4ff" }}>
@@ -56,7 +56,7 @@ function Office() {
                   </p>
                 </div>
               </div>
-              <div className="form-group p-2">
+              <div className="form-group p-2 m-0">
                 <label for="exampleInputEmail1">Permission Type :</label>
                 <input
                   type="email"
@@ -66,18 +66,19 @@ function Office() {
                   placeholder="Permission of Leave"
                 />
               </div>
-              <div className="form-group p-2">
+              <div className="form-group p-2 m-0">
                 <label for="exampleInputPassword1">Description :</label>
                 <input
-                  type="password"
+                  type="textbox"
                   className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Enter something here..."
                 />
+                
               </div>
               <div className="row">
-                <div className="col justify-content-end d-flex">
-                  <button type="submit" class="btn btn-primary">
+                <div className="col justify-content-end d-flex align-items-center">
+                  <button type="submit" class="btn btn-primary my-3">
                     Submit
                   </button>
                 </div>
@@ -113,7 +114,7 @@ function Office() {
                 </div>
                 <div className="row  px-4 pb-3 border-bottom">
                   <div className="col">
-                  <button className="btn border d-flex align-items-center gap-4">Permission Type <FaCaretDown className="fs-5"/></button>
+                  <button className="btn border d-flex align-items-center gap-4 m-0">Permission Type <FaCaretDown className="fs-5"/></button>
                   </div>
                 </div>
                 <div className="row py-2 px-3">
