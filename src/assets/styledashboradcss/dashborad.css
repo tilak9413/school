@@ -48,5 +48,9 @@
   {
     display:  none !important;
   }
+  .mheight
+  {
+    height: 600px;
+  }
   
 }
