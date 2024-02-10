@@ -32,46 +32,45 @@ function Timetable() {
               <tr>
                 <td>ENGLISH</td>
                 <td>ENGLISH</td>
-                <td>SCIENCE</td>
+                <td>Germany</td>
                 <td>HISTORY</td>
-                <td>Maria Anders</td>
                 <td>Germany</td>
               </tr>
               <tr>
               <td>MATHS</td>
                 <td>MATHS</td>
-                <td>Mexico</td>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
+                <td>SCEINCE</td>
+                <td>PT</td>
+                <td>PT</td>
                 <td>Mexico</td>
               </tr>
               <tr>
               <td>SCIENCE</td>
                 <td>PT</td>
-                <td>Austria</td>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
+                <td>MATH</td>
+                <td>MATH</td>
+                <td>SCIENCE</td>
                 <td>Austria</td>
               </tr>
               <tr>
               <td>HISTORY</td>
                 <td>PT</td>
-                <td>UK</td>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
+                <td>SCEINCE</td>
+                <td>SCEINCE</td>
+                <td>-</td>
                 <td>UK</td>
               </tr>
               <tr>
                 
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
+                {/* <td>Yoshi Tannamuri</td> */}
+                <td></td>
                 <td>Laughing Bacchus Winecellars</td>
                 <td>Yoshi Tannamuri</td>
                 <td>Canada</td>
               </tr>
               <tr>
             
-                <td>Giovanni Rovelli</td>
+                {/* <td>Giovanni Rovelli</td> */}
                 <td>Italy</td>
                 <td>Magazzini Alimentari Riuniti</td>
                 <td>Giovanni Rovelli</td>
