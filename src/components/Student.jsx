@@ -17,11 +17,9 @@ function Student() {
           <span className={`smallbolding border-end px-2 pointer ${active == 4 ? "activeaddmition" : ""} `} onClick={ () => setactive(4)} >Time table</span>
         </div>
         {
-          active == 1 ? <StudentRegister/> :  active == 2 ? <Studentleaving/> :  <Studentid/> 
+          active == 1 ? <StudentRegister/> :  active == 2 ? <Studentleaving/> :  active == 3 ? <Studentid/> :           active ==4 ? <Timetable/> : <div></div>
         }
-        {
-          active ==4 ? <Timetable/> : ""
-        }
+       
       </div>
    
     </>

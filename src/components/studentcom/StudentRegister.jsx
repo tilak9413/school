@@ -21,11 +21,11 @@ function StudentRegister() {
       {/* *****************************************************************************************  */}
       <div className='container-fluid  ' >
         <div className='row col-sm-12 table position-relative  overflow-hidden border rounded-3 bg-white '>
-        <div className=" p-0">
-                    <p className="text-center bgcolordash m-0 p-2 fw-bold">
-                      PERMISSION LIST
-                    </p>
-                  </div>
+          <div className=" p-0">
+            <p className="text-center bgcolordash m-0 p-2 fw-bold">
+              PERMISSION LIST
+            </p>
+          </div>
           <div className='row justify-content-center p-2  ' >
             <div className='col-sm-3  ' >
               <p className='lineheight m-0' >Name: <span>Tilak kumar</span> </p>
@@ -33,7 +33,7 @@ function StudentRegister() {
               <p className='m-0'>Father Name: <span>demo</span></p>
               <p className='m-0' >Mother Name: <span>demo</span></p>
               <p className='m-0' >D.O.B: <span>12-12-2xxx</span> </p>
-    
+
 
             </div>
             <div className='col-sm-3'>
@@ -53,15 +53,15 @@ function StudentRegister() {
             <div className='col-sm-3'>
               <div className=' col-sm-12 text-center  gap-5  d-grid ' >
                 <div>
-                <img style={{ width: "100px", height: "120px" }} className='img-fluid ' src="public\image\th.jpg" alt="" />
+                  <img style={{ width: "100px", height: "120px" }} className='img-fluid ' src="public\image\th.jpg" alt="" />
                 </div>
               </div>
             </div>
           </div>
           <div className=' col-sm-12  ' >
-          <p>Address: <span>Nagar , Rajasthan-307001 .</span></p>
-        <button style={{ width: "100px",bottom: "0" }} className='btn mx-3  bgcolordash text-white  end-0 position-absolute   ' >Edit</button>
-        </div>
+            <p>Address: <span>Nagar , Rajasthan-307001 .</span></p>
+            <button style={{ width: "100px", bottom: "0" }} className='btn mx-3  bgcolordash text-white  end-0 position-absolute   ' >Edit</button>
+          </div>
         </div>
 
       </div>
