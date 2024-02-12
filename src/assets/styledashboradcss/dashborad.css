@@ -57,22 +57,7 @@
 
 /* *********************************************************************************** */
 /* studentregsiter */
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-th
-{
-  background-color: #81a4ff;
 
-}
-
-.table
-{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border-radius: 12px;
-}
 .lineheight
 {
   padding: 0%;

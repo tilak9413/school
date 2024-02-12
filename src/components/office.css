@@ -7,12 +7,7 @@ td{
 .icons:hover{
   color: #006341;
 }
-label{
-  font-size: 15px;
-}
-td{
-  font-size: 18px;
-}
+
 .output {
   justify-content: center;
   align-content: start;

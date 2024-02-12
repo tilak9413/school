@@ -25,27 +25,13 @@
     padding: 4px 4px 4px 8px;
 }
 .scrolltable{
-    
     overflow: hidden;
     position: relative;
 }
-table{width: 1000px;
-    height: auto;
-    margin-inline: auto;
-    font-size: 18px;    
-}
-table,td,th,tr{
-background-color: #ffffff;
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-td,tr,th{
-    text-align: center;
-  
-}
+
 .voilate{
     color: #59227F;
-}
+}       
 
 .inputdate{ 
     background-color:rgb(235, 241, 248) ;
