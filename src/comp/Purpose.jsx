@@ -85,7 +85,7 @@ const Purpose = () => {
                     <button
                       key={index}
                       onClick={() => { setofficeindex(index); handleButtonClick(index); }}
-                      className={`btn w-100 m-0 p-2 mt-2 ${activeButton === index ? 'isSelected' : ''}`}
+                      className={`btn w-100 m-0 p-2 mt-2 myButton ${activeButton === index ? 'isSelected' : ''}`}
                     >
                       {btnName}
                     </button>
