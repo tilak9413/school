@@ -1,17 +1,18 @@
 
 import React from 'react'
 
+import '../assets/styledashboradcss/dashborad.css'
 const Attendancestaff = (props) => {
 
     return (
         <>
-            <div className="box-1 container-fluid mt-4 p-5 ps-4 shadow border-4">
+            <div className="box-1 container-fluid mt-4 p-5 ps-4  inputedit1">
                 <div className="row box-1">
                     <div className="col">
                         <h4 className='fs-4 fw-bold'>Mark Staff Attendance</h4>
                         <div className="row mt-3 selectclass d-flex flex-wrap align-items-center justify-content-between ">
                             <div className="col-lg-2 col-sm-8 col-md-4 d-flex flex-column ">
-                                <label htmlFor="Select Class" className='fs-6 ms-4'>Select Class</label>
+                                <label htmlFor="Select Class" className='fs-6 mb-2 ms-4'>Select Class</label>
                                 <select class="form-select border-2" aria-label="Default select example">
                                     <option value="" selected>All Class</option>
                                     <option value="" >1 Class</option>
@@ -30,7 +31,7 @@ const Attendancestaff = (props) => {
 
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-8  d-flex flex-column">
-                                <label htmlFor="Select Class" className='fs-6 '>Choose Date to mark attendance</label>
+                                <label htmlFor="Select Class" className='fs-6 mb-2'>Choose Date to mark attendance</label>
                                 <div className="row">
                                     <div className="col d-flex  align-items-center">
                                         <input type="date" class="form-control border-2 selectbg-2 text-black-100 w-75" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" />
@@ -46,7 +47,7 @@ const Attendancestaff = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid rounded-3 ps-4 p-3 mt-4 box-2 shadow border-2">
+            <div className="container-fluid rounded-3 ps-4 p-3 mt-4 box-2 inputedit1">
 
 
                 <div className="row ">
