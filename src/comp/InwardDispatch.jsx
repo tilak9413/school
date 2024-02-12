@@ -21,6 +21,7 @@ function InwardDispatch() {
     useRef(null),
     useRef(null),
     useRef(null),
+    useRef(null),
     // Add more refs for additional input fields if needed
   ];
 
@@ -45,65 +46,68 @@ function InwardDispatch() {
         <div className="row gap-5">
           <Purpose />
           <div className="col-8 border rounded-3 overflow-hidden">
-          <div className="row">
-          <div className="col p-0">
-            <div className="col border rounded-3 overflow-hidden">
-              <form>
-                <div className="row">
-                  <div className="col p-0">
-                    <p className="text-center bgcolordash m-0 p-2 fw-bold">
-                      POSTAL INWARD / DISPATCH LIST
-                    </p>
-                  </div>
-                </div>
-                <div className="row py-3 px-4 justify-content-between">
-                  <div className="col-5">
-                    <input
-                      type="text"
-                      placeholder="Search..."
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="col-auto d-flex gap-4 border-bottom">
-                    <FiPrinter className="fs-4 icons" />
-                    <FaRegCopy className="fs-4 icons" />
-                    <GrDocument className="fs-4 icons" />
-                    <MdMenuBook className="fs-4 icons" />
-                  </div>
-                </div>
-                <div className="row  px-4 pb-3 border-bottom">
-                  <div className="col">
-                  <button className="btn border d-flex align-items-center gap-4 m-0">Dispatch (sent)<FaCaretDown className="fs-5"/></button>
-                  </div>
-                </div>
-                <div className="row py-2 px-3">
-                  <div className="col">
-                    <ol>
-                      <div className="row py-2">
-                        <div className="col d-flex justify-content-between">
-                          <li>Dispatch of test papers</li>
-                          <span className="d-flex gap-4">
-                          <FaPen className="fs-5 icons"/>
-                          <RxCross1 className="fs-4 icons"/>
-                          </span>
-                        </div>
+            <div className="row">
+              <div className="col p-0">
+                <div className="col border rounded-3 overflow-hidden">
+                  <form>
+                    <div className="row">
+                      <div className="col p-0">
+                        <p className="text-center bgcolordash m-0 p-2 fw-bold">
+                          POSTAL INWARD / DISPATCH LIST
+                        </p>
                       </div>
-                      <div className="row py-2">
-                        <div className="col d-flex justify-content-between">
-                          <li>Dispatch of test papers</li>
-                          <span className="d-flex gap-4">
-                          <FaPen className="fs-5 icons"/>
-                          <RxCross1 className="fs-4 icons"/>
-                          </span>
-                        </div>
+                    </div>
+                    <div className="row py-3 px-4 justify-content-between">
+                      <div className="col-5">
+                        <input
+                          type="text"
+                          placeholder="Search..."
+                          className="form-control"
+                        />
                       </div>
-                    </ol>
-                  </div>
+                      <div className="col-auto d-flex gap-4 border-bottom">
+                        <FiPrinter className="fs-4 icons" />
+                        <FaRegCopy className="fs-4 icons" />
+                        <GrDocument className="fs-4 icons" />
+                        <MdMenuBook className="fs-4 icons" />
+                      </div>
+                    </div>
+                    <div className="row  px-4 pb-3 border-bottom">
+                      <div className="col">
+                        <button className="btn border d-flex align-items-center gap-4 m-0">
+                          Dispatch (sent)
+                          <FaCaretDown className="fs-5" />
+                        </button>
+                      </div>
+                    </div>
+                    <div className="row py-2 px-3">
+                      <div className="col">
+                        <ol>
+                          <div className="row py-2">
+                            <div className="col d-flex justify-content-between">
+                              <li>Dispatch of test papers</li>
+                              <span className="d-flex gap-4">
+                                <FaPen className="fs-5 icons" />
+                                <RxCross1 className="fs-4 icons" />
+                              </span>
+                            </div>
+                          </div>
+                          <div className="row py-2">
+                            <div className="col d-flex justify-content-between">
+                              <li>Dispatch of test papers</li>
+                              <span className="d-flex gap-4">
+                                <FaPen className="fs-5 icons" />
+                                <RxCross1 className="fs-4 icons" />
+                              </span>
+                            </div>
+                          </div>
+                        </ol>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-              </form>
+              </div>
             </div>
-          </div>
-        </div>
           </div>
         </div>
         <div className="row mt-4">
@@ -120,40 +124,80 @@ function InwardDispatch() {
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">Postal Type: </label>
-                    <input ref={inputRefs[0]}  onKeyPress={(event) => handleKeyPress(event, 0)} className="form-control" type="text" />
+                    <input
+                      ref={inputRefs[0]}
+                      onKeyPress={(event) => handleKeyPress(event, 0)}
+                      className="form-control"
+                      type="text"
+                    />
                   </div>
                   <div className="col-2">
                     <label htmlFor="">Date: </label>
-                    <input ref={inputRefs[1]}  onKeyPress={(event) => handleKeyPress(event, 1)} className="form-control" type="text" />
+                    <input
+                      ref={inputRefs[1]}
+                      onKeyPress={(event) => handleKeyPress(event, 1)}
+                      className="form-control"
+                      type="text"
+                    />
                   </div>
                   <div className="col">
                     <label htmlFor="">Address: </label>
-                    <input ref={inputRefs[2]}  onKeyPress={(event) => handleKeyPress(event, 2)} className="form-control" type="text" />
+                    <input
+                      ref={inputRefs[2]}
+                      onKeyPress={(event) => handleKeyPress(event, 2)}
+                      className="form-control"
+                      type="text"
+                    />
                   </div>
                 </div>
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">From: </label>
-                    <input ref={inputRefs[3]}  onKeyPress={(event) => handleKeyPress(event, 3)} className="form-control" type="text" />
-                  </div> 
+                    <input
+                      ref={inputRefs[3]}
+                      onKeyPress={(event) => handleKeyPress(event, 3)}
+                      className="form-control"
+                      type="text"
+                    />
+                  </div>
                   <div className="col-2">
                     <label htmlFor="">To: </label>
-                    <input ref={inputRefs[4]}  onKeyPress={(event) => handleKeyPress(event, 4)} className="form-control" type="text" />
+                    <input
+                      ref={inputRefs[4]}
+                      onKeyPress={(event) => handleKeyPress(event, 4)}
+                      className="form-control"
+                      type="text"
+                    />
                   </div>
                   <div className="col">
                     <label htmlFor="">Title: </label>
-                    <input ref={inputRefs[5]}  onKeyPress={(event) => handleKeyPress(event, 5)} className="form-control" type="text" />
+                    <input
+                      ref={inputRefs[5]}
+                      onKeyPress={(event) => handleKeyPress(event, 5)}
+                      className="form-control"
+                      type="text"
+                    />
                   </div>
                 </div>
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">Reference No: </label>
-                    <input ref={inputRefs[6]}  onKeyPress={(event) => handleKeyPress(event, 6)} className="form-control" type="text" />
+                    <input
+                      ref={inputRefs[6]}
+                      onKeyPress={(event) => handleKeyPress(event, 6)}
+                      className="form-control"
+                      type="text"
+                    />
                   </div>
                   <div className="col-4">
                     <label htmlFor="">Attach Document: </label>
-                    <div className="border form-control d-flex justify-content-center align-items-center gap-2">
-                    <FaCloudUploadAlt className="fs-4"/>Drag and drop a file or click
+                    <div class="file-upload-wrapper">
+                      <input  ref={inputRefs[7]}
+                      onKeyPress={(event) => handleKeyPress(event, 7)}
+                        type="file"
+                        id="input-file-now"
+                        className="file-upload form-control"
+                      />
                     </div>
                   </div>
                   <div className="col pt-2 d-flex justify-content-end">
