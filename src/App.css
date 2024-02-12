@@ -226,6 +226,10 @@ ul li:hover .iconcolor {
 } 
 .bgcolordash
 {
+  background-color: #adb5bd;
+}
+
+.bgcolorhead{
   background-color: #81a4ff;
 }
 

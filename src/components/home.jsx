@@ -20,10 +20,10 @@ function Home() {
 
   return (
     <div
-      style={{ height: "100vh" }}
-      className="col-sm-2 p-1 position-fixed  border-end  d-none d-xl-block    align-items-center bg-white text-dark"
+      style={{ height: "100vh"}}
+      className="col-sm-2 p-1 position-fixed  border-end  d-none d-xl-block   align-items-center text-dark bg-light"
     >
-      <div className="d-flex align-items-center gap-3 p-3">
+      <div className="d-flex align-items-center gap-3 p-3 border-bottom">
         <img
           className="img-fluid logosize"
           src="public\image\logo-removebg-preview.png"
