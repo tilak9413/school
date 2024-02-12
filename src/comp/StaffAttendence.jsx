@@ -6,10 +6,10 @@ const Attendancestaff = (props) => {
             <div className="box-1 container-fluid mt-4 p-3 shadow border-4">
                 <div className="row box-1">
                     <div className="col">
-                        <h1 className='selectlable'>Mark Staff Attendance</h1>
+                        <h1 className='fs-4 fw-bold'>Mark Staff Attendance</h1>
                         <div className="row mt-3 selectclass d-flex flex-wrap justify-content-between ">
                             <div className="col-lg-2 col-sm-8 col-md-4 d-flex flex-column ">
-                                <label htmlFor="Select Class" className='fs-5 ms-4'>Select Class</label>
+                                <label htmlFor="Select Class" className='fs-6 ms-4'>Select Class</label>
                                 <select name="" className='selectbg-1 text-black' id="">
                                     <option value="">All Class</option>
                                     <option value="">1 Class</option>
@@ -27,12 +27,12 @@ const Attendancestaff = (props) => {
                                 </select>
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-8  d-flex flex-column">
-                                <label htmlFor="Select Class" className='fs-5 '>Choose Date to mark attendance</label>
+                                <label htmlFor="Select Class" className='fs-6'>Choose Date to mark attendance</label>
                                 <div className="row">
                                     <div className="col d-flex align-items-center">
 
                                         <input type="date" className='inputdate selectbg-2 text-black-100 w-75' id="html" />
-                                        <button for="html" className='ps-3 datebtn  pb-2 pe-3 ms-1 rounded-2  text-white fw-5 '>Load</button>
+                                        <button for="html" className='ps-3 datebtn  pb-2 pe-3 ms-1 rounded-2  text-white  '>Load</button>
                                     </div>
                                 </div>
 
@@ -46,10 +46,10 @@ const Attendancestaff = (props) => {
 
                 <div className="row ">
                     <div className="col-lg-12 d-flex flex-column flex-wrap   justify-content-around">
-                        <h4 className='voilate mt-4 ms-2 fs-3 fw-bold'>Teachers Attendance List</h4>
+                        <h4 className=' mt-4 ms-2 fs-4 fw-bold'>Teachers Attendance List</h4>
 
                         <div className="row w-lg-50 w-md-75 w-sm-75">
-                            <p style={{ Color: "#3B3B3B" }} className=' opacity-75 text-left text-font'>Below  is  the  list  of  teachers .
+                            <p style={{ Color: "#3B3B3B" }} className=' opacity-75 fs-5 text-left text-font'>Below  is  the  list  of  teachers .
                                 you  are  going  to  marks  Attendance  for  25 - Jan - 2023 .</p>
                         </div>
                         <div className="row">
@@ -57,19 +57,11 @@ const Attendancestaff = (props) => {
                                 <div className="row mt-3  selectclass  ">
                                     <div className="col-lg-2 col-sm-12 ms-2 d-flex flex-column">
                                         <select name="" className='selectbg-1 text-black' id="">
-                                            <option value="">All Class</option>
+                                            <option value="">Select Shift</option>
                                             <option value="">1 Class</option>
                                             <option value="">2 Class</option>
                                             <option value="">3 Class</option>
-                                            <option value="">4 Class</option>
-                                            <option value="">5 Class</option>
-                                            <option value="">6 Class</option>
-                                            <option value="">7 Class</option>
-                                            <option value="">8 Class</option>
-                                            <option value="">9 Class</option>
-                                            <option value="">10 Class</option>
-                                            <option value="">11 Class</option>
-                                            <option value="">12 Class</option>
+                                            
                                         </select>
                                     </div>
                                     <div className="col-lg-4 col-sm-12 ms-5 d-flex justify-content-center col-md-6  d-flex flex-column">
@@ -77,7 +69,7 @@ const Attendancestaff = (props) => {
                                             <div className="col d-flex align-items-center">
 
                                                 <input type="text" placeholder='Search For Staff' className='inputdate selectbg-2 text-black-100 w-75' id="html" />
-                                                <button for="html" className='ps-3 datebtn  pb-2 pe-3 ms-1 rounded-2  text-white fw-5 '>Search</button>
+                                                <button for="html" className='ps-3 datebtn  pb-2 pe-3 ms-1 rounded-2  text-white  '>Search</button>
                                             </div>
                                         </div>
 
@@ -94,12 +86,12 @@ const Attendancestaff = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row scrolltable mt-5 ">
-                            <div className="col ">
-                                <table classname="table">
-
-                                    <thead className=''>
-                                        <tr className=''>
+                        <div className="scrolltable">
+                        <div className='container-fluid p-0 mt-5 '>
+                            <div className='row    '>
+                                <div>
+                                    <table className='table bg-white ' >
+                                        <tr>
                                             <th scope="col">Roll No</th>
                                             <th scope="col">Name</th>
                                             <th scope="col">Father Name</th>
@@ -107,52 +99,53 @@ const Attendancestaff = (props) => {
                                             <th scope="col">Status</th>
                                             <th scope="col">Select Status</th>
                                         </tr>
-                                    </thead>
-                                    <tbody >
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td><img className='profileimg' src="public/image/profile.png" alt="" /> Mohit Kumar</td>
+                                            <td scope="row">1</td>
+                                            <td><img className='profileimg p-0' src="public/image/profile.png" alt="" /> Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='status'>Present</button></td>
-                                            <td><button className='Present'>Present</button><button className='Absent'>Absent</button><button className='HalfDay'>Half Day</button></td>
+                                            <td ><button className='status bg-success'>Present</button></td>
+                                            <td><button className=' text-success fw-bold'>Present</button><button className=' text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">2</th>
-                                            <td><img className='profileimg' src="public/image/profile.png" alt="" />Mohit Kumar</td>
+                                            <td scope="row">2</td>
+                                            <td><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='status'>Present</button></td>
-                                            <td><button className='Present'>Present</button><button className='Absent'>Absent</button><button className='HalfDay'>Half Day</button></td>
+                                            <td ><button className='status bg-success'>Present</button></td>
+                                            <td><button className=' text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">3</th>
-                                            <td><img className='profileimg' src="public/image/profile.png" alt="" />Mohit Kumar</td>
+                                            <td scope="row">3</td>
+                                            <td><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='status'>Present</button></td>
-                                            <td><button className='Present'>Present</button><button className='Absent'>Absent</button><button className='HalfDay'>Half Day</button></td>
+                                            <td ><button className='AbsentStatus bg-danger'>Absent</button></td>
+                                            <td><button className=' text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">4</th>
-                                            <td><img className='profileimg' src="public/image/profile.png" alt="" />Mohit Kumar</td>
+                                            <td scope="row">4</td>
+                                            <td><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='AbsentStatus'>Absent</button></td>
-                                            <td><button className='Present'>Present</button><button className='Absent'>Absent</button><button className='HalfDay'>Half Day</button></td>
+                                            <td ><button className='status bg-success'>Present</button></td>
+                                            <td><button className='text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">5</th>
-                                            <td><img className='profileimg' src="public/image/profile.png" alt="" />Mohit Kumar</td>
+                                            <td scope="row">5</td>
+                                            <td><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td><button className='HalfDaystatus'>HalfDay</button></td>
-                                            <td><button className='Present'>Present</button><button className='Absent'>Absent</button><button className='HalfDay'>Half Day</button></td>
+                                            <td ><button className='status bg-success'>Present</button></td>
+                                            <td><button className='text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
-                                    </tbody>
-                                </table>
-                            </div></div>
 
+                                    </table>
+                                </div>
+
+                            </div>
+                            </div>
+</div>
                     </div>
 
                 </div>
