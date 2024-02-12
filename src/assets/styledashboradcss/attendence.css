@@ -12,9 +12,9 @@
 
 
 .selectbg-1 {
-    background-color: rgb(235, 241, 248);
+    background-color: rgb(235, 240, 248) !important;
+    border: 2px solid #7d8ba4 !important;
     padding-top: 3px;
-    border: 2px solid #a18cdc;
     height: 2.2rem;
     margin-left: 20px;
     color: black;
@@ -31,8 +31,8 @@
 
 
 .inputdate {
-    background-color: rgb(235, 241, 248);
-    border: 2px solid #a18cdc;
+    background-color: rgb(235, 240, 248) !important;
+    border: 2px solid #7d8ba4 !important;
     height: 2.2rem;
     padding-top: 3px;
     border-radius: 5px;
@@ -91,9 +91,10 @@
     padding-inline: 14px;
     
     color: #ffffff !important;
-    opacity: 45% !important;
 }
-
+.rows{
+    width: 100%;
+}
 .Present {
     color: #14871f;
     margin-inline: 10px;
@@ -113,9 +114,8 @@
 }
 
 .profileimg {
-    height: 35px;
+    height: 35px ;
     width: 35px;
-    padding: 0%;
     margin-right: 10px;
     border-radius: 50%;
     border: 1px solid black;
@@ -126,7 +126,6 @@
     border-radius: 10px !important;
     padding-inline: 14px;
     color: #ffffff !important;
-    opacity: 45% !important;
 }
 
 .HalfDaystatus {
@@ -135,5 +134,4 @@
     padding-inline: 14px;
     
     color: #ffffff !important;
-    opacity: 45% !important;
 }
