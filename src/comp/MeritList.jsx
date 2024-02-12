@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../public/assets/css/style.css'
+// import '../../public/assets/css/style.css'
 
 function MeritList() {
   return (
@@ -26,9 +26,9 @@ function MeritList() {
         </form>
         <hr />
         
-        <table className='table bg-white ' >
+        <table>
               <tr>
-                <th style={{ width: "2%" }}>SR.NO </th>
+                <th style={{ width: "2%" }}>SR.N </th>
                 <th>GR NO.</th>
                 <th>Student Name</th>
                 <th>Father Name</th>
