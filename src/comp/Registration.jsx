@@ -34,12 +34,6 @@ function Registration() {
         setstudentSign(reader.result)
       })
     }
-
-
-
-   
-  
-    // Function to focus on the next input field
     
   return (
     <>
@@ -48,53 +42,53 @@ function Registration() {
 
           <div className="row  ">
             <div className="col-sm-4">
-              <InputComp name='FIRST NAME' placeholder="Enter First Name" index="0"  />
+              <InputComp name='FIRST NAME' placeholder="Enter First Name" index={0}  />
             </div>
             <div className="col-sm-4">
-              <InputComp name='MIDDLE NAME' placeholder="Enter Middle Name" index="1" />
+              <InputComp name='MIDDLE NAME' placeholder="Enter Middle Name" index={1} />
             </div>
             <div className="col-sm-4">
-              <InputComp name='LAST NAME' placeholder="Enter Last Name" index="" />
+              <InputComp name='LAST NAME' placeholder="Enter Last Name" index={2} />
             </div>
           </div>
 
           <div className="bankingDetail position-relative pt-4   ">
             <div className="row">
               <div className="col-sm-4">
-                <InputComp name='DATE OF BIRTH' placeholder="Enter Date of Birth  " />
+                <InputComp name='DATE OF BIRTH' placeholder="Enter Date of Birth  " index={3} />
               </div>
               <div className="col-sm-4">
-                <InputComp name='PHONE NO.' placeholder="Enter Phone No." />
+                <InputComp name='PHONE NO.' placeholder="Enter Phone No." index={4}/>
               </div>
               <div className="col-sm-4">
-                <InputComp name='EMAIL ADDRESS' placeholder="Enter Email Address " />
+                <InputComp name='EMAIL ADDRESS' placeholder="Enter Email Address " index={5}/>
               </div>
             </div>
             <div className="row  pt-3 ">
               <div className="col-sm-4">
-                <InputComp name='GENDER' />
+                <InputComp name='GENDER' index={6}/>
               </div>
               <div className="col-sm-4">
-                <InputComp name='BLOOD GROUP' />
+                <InputComp name='BLOOD GROUP' index={7}/>
               </div>
               <div className="col-sm-4">
-                <InputComp name='RELIGION' />
+                <InputComp name='RELIGION' index={8}/>
               </div>
             </div>
           </div>
           <div className="row  pt-3 ">
             <div className="col-sm-12">
-              <InputComp name='PRESENT ADDRESS' />
+              <InputComp name='PRESENT ADDRESS' index={9}/>
             </div>
             <div className="row mx-0 p-0  my-4">
               <div className="col-sm-4">
-                <InputComp name='CITY' />
+                <InputComp name='CITY' index={10}/>
               </div>
               <div className="col-sm-4">
-                <InputComp name='STATE' />
+                <InputComp name='STATE' index={11}/>
               </div>
               <div className="col-sm-4">
-                <InputComp name='POSTAL/ZIP CODE' />
+                <InputComp name='POSTAL/ZIP CODE' index={12} />
               </div>
             </div>
           </div>
@@ -102,17 +96,17 @@ function Registration() {
 
           <div className="row pt-3 ">
             <div className="col-sm-12">
-              <InputComp name='PERMANENT ADDRESS' />
+              <InputComp name='PERMANENT ADDRESS' index={13}/>
             </div>
             <div className="row mx-0 p-0  my-4">
               <div className="col-sm-4">
-                <InputComp name='CITY' />
+                <InputComp name='CITY' index={14}/>
               </div>
               <div className="col-sm-4">
-                <InputComp name='STATE' />
+                <InputComp name='STATE' index={15}/>
               </div>
               <div className="col-sm-4">
-                <InputComp name='POSTAL/ZIP CODE' />
+                <InputComp name='POSTAL/ZIP CODE' index={16}/>
               </div>
             </div>
           </div>
