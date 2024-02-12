@@ -34,9 +34,9 @@ function Registration() {
       })
     }
     
-  return (
+  return (  
     <>
-       <h3 className='text-center text-decoration-underline my-3 pt-2 py-2 text-success '>Student Registration Form</h3>
+       <h3 className='text-center text-decoration-underline my-3 pt-2 py-2 '>Student Registration Form</h3>
         <div className='p-3 rounded m-3 shadow bg-white border'>
 
           <div className="row  ">

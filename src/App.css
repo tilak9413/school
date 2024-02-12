@@ -6,6 +6,24 @@
   box-sizing: border-box;
 }
 
+h1{
+  color:#561b80 ;
+}
+h2{
+  color:#561b80 ;
+}
+h3{
+  color:#561b80 ;
+}
+
+h4{
+  color:#561b80 ;
+}
+h5{
+  color:#561b80 ;
+}
+
+
 .container-flui {
   font-family: piazzolla;
   background: url(public/image/bg.jpg);
@@ -191,7 +209,7 @@ width: 345px !important;
 ul li:hover
 {
   /* background-color: #5a5a5a; */
-  background-color: #adb5bd;
+  background-color: #EEE0B1;
   /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
   border-radius: 12px;
 } 
@@ -203,8 +221,7 @@ ul li:hover .iconcolor {
   color: black;
 }
 .active {
-  background-color: #adb5bd;
-  color: #000000;
+  background-color: #EEE0B1;
   border-radius: 12px;
 }
 .active :nth-child(1){
@@ -212,7 +229,7 @@ ul li:hover .iconcolor {
 }
 .iconcolor
 {
-  color: #81a4ff;
+  color: #fff;
 }
 
 .dashcolor
@@ -226,12 +243,10 @@ ul li:hover .iconcolor {
 } 
 .bgcolordash
 {
-  background-color: #adb5bd;
+  background-color: black
 }
 
-.bgcolorhead{
-  background-color: #81a4ff;
-}
+
 /* 81a4ff */
 
 .fourbgcolorhead{
