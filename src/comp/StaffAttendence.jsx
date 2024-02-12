@@ -50,7 +50,7 @@ const Attendancestaff = (props) => {
 
 
                 <div className="row ">
-                    <div className="col-lg-11 d-flex flex-column flex-wrap   justify-content-around">
+                    <div className="col-lg-11 d-flex flex-column flex-wrap m-auto   justify-content-around">
                         <h4 className=' mt-4 ms-2 fs-4 fw-bold'>Teachers Attendance List</h4>
 
                         <div className="row w-lg-50 w-md-75 w-sm-75">
@@ -69,7 +69,7 @@ const Attendancestaff = (props) => {
                                             <option value="">3 Class</option>
                                         </select>
                                     </div>
-                                    <div className="col-lg-4 col-sm-12 ms-5 d-flex flex-column  justify-content-center col-md-6 ">
+                                    <div className="col-lg-4 col-sm-12 ms-5 d-flex flex-column justify-content-center col-md-6 ">
                                         <div className="row d-flex align-items-center">
                                             <div className="col d-flex align-items-center">
                                                 <input type="text" class="form-control border-2 selectbg-2 text-black-100 w-75" placeholder="Search For Staff" aria-label="Username" aria-describedby="basic-addon1" />
@@ -143,7 +143,7 @@ const Attendancestaff = (props) => {
                                             <td className='ps-3 pe-3' ><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td className='ps-3 pe-3'>Mohit Kumar</td>
                                             <td className='ps-3 pe-3'>9 th</td>
-                                            <td className='ps-3 pe-3'><button className='status bg-success'>Present</button></td>
+                                            <td className='ps-3 pe-3'><button className='status bg-danger'>Absent</button></td>
                                             <td className='ps-3 pe-3'><button className='text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
 
