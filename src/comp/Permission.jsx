@@ -104,8 +104,11 @@ const Permission = () => {
                   </div>
                 </div>
                 <div className="row  px-4 pb-3 border-bottom">
-                  <div className="col">
-                  <button className="btn border d-flex align-items-center gap-4 m-0">Permission Type <FaCaretDown className="fs-5"/></button>
+                  <div className="col-3">
+                  <select name="" id="" className='form-select'>
+                    <option value="">General Permission</option>
+                    <option value="">Permission for Leave</option>
+                  </select>
                   </div>
                 </div>
                 <div className="row py-2 px-3">

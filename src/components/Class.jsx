@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../assets/styledashboradcss/class.css'
 function Class() {
   return (
-    <div>
-      Class
-    </div>
+    <>
+    
+    </>
   )
 }
 

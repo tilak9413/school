@@ -1,11 +1,13 @@
 // import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import React from 'react'
-import '../assets/styledashboradcss/attendence.css'
+import '../assets/styledashboradcss/apply Attendance.css'
 import Navbar from '../comp/Navbar'
 import Attendancestudent from '../comp/studentAttendance'
 import Attendancestaff from '../comp/StaffAttendence'
 function Attendence() {
   const [active,setactive]=React.useState()
+
   return (
     <>
     <div className='container-fluid'>
@@ -18,11 +20,12 @@ function Attendence() {
       {
         active == 1 ? <Attendancestudent/> :  <Attendancestaff/>
       }
-     
+     </div>
     
-    </div>
+   
   </>
+
   )
-}
+  }
 
 export default Attendence
