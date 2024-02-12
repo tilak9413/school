@@ -1,7 +1,8 @@
 import React from 'react'
 import InputComp from '../../comp/InputComp'
 import Dropdown from '../../comp/dropdown'
-
+import "../../assets/styledashboradcss/addmition.css";
+// import '../../App.css'
 function StudentRegister() {
   return (
     <>
@@ -68,17 +69,19 @@ function StudentRegister() {
 
       <div className='container-fluid p-0 mt-2 ' >
         <div className='row col-sm-12   '>
-          <div>
-            <table className='table bg-white ' >
+          {/* <div>
+            <table className='table table-hover rounded-3 overflow-hidden' >
+            <thead className="bgcolordash">
               <tr>
-                <th style={{ width: "2%" }}>SR.NO </th>
-                <th>GR NO.</th>
-                <th>Student Name</th>
-                <th>Father Name</th>
-                <th>Date Of Birth</th>
-                <th>Blood Group</th>
+                <th style={{ width: "2%" }} scope="col">SR.NO </th>
+                <th >GR NO.</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Father Name</th>
+                <th scope="col">Date Of Birth</th>
+                <th scope="col">Blood Group</th>
               </tr>
-              <tr>
+              </thead>
+              <tr scope="row">
                 <td>1</td>
                 <td>Maria Anders</td>
                 <td>Germany</td>
@@ -127,7 +130,66 @@ function StudentRegister() {
                 <td>Italy</td>
               </tr>
             </table>
+          </div> */}
+
+<div className="row">
+          <div className="col">
+            <table class="table table-hover rounded-3 overflow-hidden">
+              <thead className="bgcolordash">
+                <tr className="toptr">
+                <th scope="col">SR.NO </th>
+                <th >GR NO.</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Father Name</th>
+                <th scope="col">Date Of Birth</th>
+                <th scope="col">Blood Group</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Maria Anders</td>
+                <td>Germany</td>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Francisco Chang</td>
+                <td>Mexico</td>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Roland Mendel</td>
+                <td>Austria</td>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Helen Bennett</td>
+                <td>UK</td>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </div>
 
         </div>
       </div>
