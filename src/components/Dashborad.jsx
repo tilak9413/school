@@ -151,7 +151,7 @@ function Dashborad() {
           <div className='col-sm-6 bg-white dispaly d-none celender mt-3 inputedit1   '>
             <div className='app h-25  '>
               <div className='calendar-container mheight  '>
-                <p className=' fw-bold border-bottum px-3'>Calendar</p>
+                <p className=' fw-bold border-bottum px-2'>Calendar</p>
                 <Calendar className="text-center"
                   onChange={setDate}
                   value={date}
