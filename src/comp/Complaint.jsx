@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../comp/Navbar";
-import Welcome from "../comp/Welcome";
 import { FiPrinter } from "react-icons/fi";
 import { GrDocument } from "react-icons/gr";
 import { FaRegCopy } from "react-icons/fa";
