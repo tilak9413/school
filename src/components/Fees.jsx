@@ -2,9 +2,11 @@ import React from 'react'
 
 function Fees() {
   return (
-    <div>
-      Fees tilak 
-    </div>
+    <>
+       <div className="box">
+        
+       </div>
+    </>
   )
 }
 
