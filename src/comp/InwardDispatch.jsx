@@ -11,8 +11,33 @@ import { FaPen } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import Purpose from "../comp/purpose";
 import { FaCloudUploadAlt } from "react-icons/fa";
-
+import { useRef } from "react";
 function InwardDispatch() {
+  const inputRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    // Add more refs for additional input fields if needed
+  ];
+
+  // Function to focus on the next input field
+  const focusNextInput = (index) => {
+    // If current input is not the last one
+    if (index < inputRefs.length - 1) {
+      inputRefs[index + 1].current.focus(); // Focus on the next input field
+    }
+  };
+
+  const handleKeyPress = (event, index) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent default form submission behavior
+      focusNextInput(index); // Focus on the next input field
+    }
+  };
   return (
     <>
       {/* <Welcome /> */}
@@ -95,35 +120,35 @@ function InwardDispatch() {
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">Postal Type: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[0]}  onKeyPress={(event) => handleKeyPress(event, 0)} className="form-control" type="text" />
                   </div>
                   <div className="col-2">
                     <label htmlFor="">Date: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[1]}  onKeyPress={(event) => handleKeyPress(event, 1)} className="form-control" type="text" />
                   </div>
                   <div className="col">
                     <label htmlFor="">Address: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[2]}  onKeyPress={(event) => handleKeyPress(event, 2)} className="form-control" type="text" />
                   </div>
                 </div>
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">From: </label>
-                    <input className="form-control" type="text" />
-                  </div>
+                    <input ref={inputRefs[3]}  onKeyPress={(event) => handleKeyPress(event, 3)} className="form-control" type="text" />
+                  </div> 
                   <div className="col-2">
                     <label htmlFor="">To: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[4]}  onKeyPress={(event) => handleKeyPress(event, 4)} className="form-control" type="text" />
                   </div>
                   <div className="col">
                     <label htmlFor="">Title: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[5]}  onKeyPress={(event) => handleKeyPress(event, 5)} className="form-control" type="text" />
                   </div>
                 </div>
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">Reference No: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[6]}  onKeyPress={(event) => handleKeyPress(event, 6)} className="form-control" type="text" />
                   </div>
                   <div className="col-4">
                     <label htmlFor="">Attach Document: </label>

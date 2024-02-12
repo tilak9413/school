@@ -3,6 +3,7 @@ import InputComp from '../comp/InputComp'
 import '../assets/styledashboradcss/addmition.css'
 import { useState } from 'react'
 import '../../public/assets/css/style.css'
+import { useRef } from 'react'
 
 function Registration() {
 
@@ -28,15 +29,18 @@ function Registration() {
       console.log(e.target.files[0])
       let file = e.target.files[0];
       let reader = new FileReader();
-  
       reader.readAsDataURL(file);
-  
       reader.addEventListener("load", function () {
         setstudentSign(reader.result)
       })
-  
-  
     }
+
+
+
+   
+  
+    // Function to focus on the next input field
+    
   return (
     <>
        <h3 className='text-center text-decoration-underline my-3 pt-2 py-2 text-success '>Student Registration Form</h3>
@@ -44,13 +48,13 @@ function Registration() {
 
           <div className="row  ">
             <div className="col-sm-4">
-              <InputComp name='FIRST NAME' placeholder="Enter First Name" />
+              <InputComp name='FIRST NAME' placeholder="Enter First Name" index="0"  />
             </div>
             <div className="col-sm-4">
-              <InputComp name='MIDDLE NAME' placeholder="Enter Middle Name" />
+              <InputComp name='MIDDLE NAME' placeholder="Enter Middle Name" index="1" />
             </div>
             <div className="col-sm-4">
-              <InputComp name='LAST NAME' placeholder="Enter Last Name" />
+              <InputComp name='LAST NAME' placeholder="Enter Last Name" index="" />
             </div>
           </div>
 
