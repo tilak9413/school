@@ -73,7 +73,7 @@ function Dashborad() {
       <div className='container-fluid  p-0' >
         <div className='col-sm-12 p-2  d-flex  align-items-center justify-content-between' >
           <div className='col-sm-3   ' >
-            <div className=' bgcolordash   me-2 d-flex rounded-3 textcenter'>
+            <div className=' fourbgcolorhead   me-2 d-flex rounded-3 textcenter'>
               <div className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
@@ -81,7 +81,7 @@ function Dashborad() {
             </div>
            
             <div className='col-sm-3   ' >
-            <div className=' bgcolordash  mx-2 d-flex rounded-3 textcenter'>
+            <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
               <div className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
@@ -89,7 +89,7 @@ function Dashborad() {
             </div>
 
             <div className='col-sm-3   ' >
-            <div className=' bgcolordash  mx-2 d-flex rounded-3 textcenter'>
+            <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
               <div className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
@@ -97,7 +97,7 @@ function Dashborad() {
             </div>
             
             <div className='col-sm-3   ' >
-            <div className=' bgcolordash   mx-2 d-flex rounded-3 textcenter'>
+            <div className=' fourbgcolorhead   mx-2 d-flex rounded-3 textcenter'>
               <div className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
@@ -151,7 +151,7 @@ function Dashborad() {
           <div className='col-sm-6 bg-white dispaly d-none celender mt-3 inputedit1   '>
             <div className='app h-25  '>
               <div className='calendar-container mheight  '>
-                <p className=' fw-bold border-bottum'>Calendar</p>
+                <p className=' fw-bold border-bottum px-3'>Calendar</p>
                 <Calendar className="text-center"
                   onChange={setDate}
                   value={date}

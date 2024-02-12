@@ -232,6 +232,14 @@ ul li:hover .iconcolor {
 .bgcolorhead{
   background-color: #81a4ff;
 }
+/* 81a4ff */
+
+.fourbgcolorhead{
+  background-color: rgb(7 31 71);
+  color: white;
+    border-radius: 5px;
+}
+
 
 .welcomedash
 {
