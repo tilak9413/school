@@ -25,16 +25,16 @@ function Home() {
             <div className='mt-4'>
               <ul className='list-items d-grid gap-1 '>
 
-                <li className='liwidth d-flex align-items-center gap-2' > <MdDashboard className='iconcolor fs-4' /><Link className='text-decoration-none text-dark' to="/"><p className='m-0 fs-5'>Dashboard</p></Link></li>
-                <li className='liwidth  d-flex align-items-center gap-2'> <HiOfficeBuilding className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="office"><p className='m-0 fs-5'>Office</p></Link></li>
-                <li className='liwidth  d-flex align-items-center gap-2' >  <MdPlaylistAddCircle className='iconcolor  fs-4' /><Link className='text-decoration-none text-dark' to="admissions"><p className='m-0 fs-5'>Admissions</p></Link> </li>
-                <li className='liwidth  d-flex align-items-center gap-2'>  <PiStudentBold className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="student"><p className='m-0 fs-5'>Students</p></Link>  </li>
-                <li  className='liwidth  d-flex align-items-center gap-2' > <MdClass className='iconcolor  fs-4' />  <Link className='text-decoration-none text-dark' to="class"><p className='m-0 fs-5'>Class</p></Link></li>
-                <li  className='liwidth  d-flex align-items-center gap-2' > <FaHandPointer className='iconcolor  fs-4' />  <Link className='text-decoration-none text-dark' to="attendance"><p className='m-0 fs-5'>Attendance</p></Link> </li>
-                <li  className='liwidth  d-flex align-items-center gap-2' > <FaMoneyCheckDollar className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="fees"><p className='m-0 fs-5'>Fees</p></Link> </li>
-                <li  className='liwidth  d-flex align-items-center gap-2' >  <PiExamFill className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="exams"><p className='m-0 fs-5'>Exams</p></Link> </li>
-                <li className='liwidth  d-flex align-items-center gap-2' > <FaMoneyCheck className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="staffpayroll"><p className='m-0 fs-5'>Staff payroll</p></Link> </li>
-                <li className='liwidth  d-flex align-items-center gap-2' > <RiAccountPinCircleFill className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="account"> <p className='m-0 fs-5'>Account</p></Link> </li>
+                <li className='liwidth d-flex align-items-center gap-2' > <MdDashboard className='iconcolor fs-4' /><Link className='text-decoration-none text-dark' to="/"><p className='m-0'>Dashboard</p></Link></li>
+                <li className='liwidth  d-flex align-items-center gap-2'> <HiOfficeBuilding className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="office"><p className='m-0'>Office</p></Link></li>
+                <li className='liwidth  d-flex align-items-center gap-2' >  <MdPlaylistAddCircle className='iconcolor  fs-4' /><Link className='text-decoration-none text-dark' to="admissions"><p className='m-0'>Admissions</p></Link> </li>
+                <li className='liwidth  d-flex align-items-center gap-2'>  <PiStudentBold className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="student"><p className='m-0'>Students</p></Link>  </li>
+                <li  className='liwidth  d-flex align-items-center gap-2' > <MdClass className='iconcolor  fs-4' />  <Link className='text-decoration-none text-dark' to="class"><p className='m-0'>Class</p></Link></li>
+                <li  className='liwidth  d-flex align-items-center gap-2' > <FaHandPointer className='iconcolor  fs-4' />  <Link className='text-decoration-none text-dark' to="attendance"><p className='m-0'>Attendance</p></Link> </li>
+                <li  className='liwidth  d-flex align-items-center gap-2' > <FaMoneyCheckDollar className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="fees"><p className='m-0'>Fees</p></Link> </li>
+                <li  className='liwidth  d-flex align-items-center gap-2' >  <PiExamFill className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="exams"><p className='m-0'>Exams</p></Link> </li>
+                <li className='liwidth  d-flex align-items-center gap-2' > <FaMoneyCheck className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="staffpayroll"><p className='m-0'>Staff payroll</p></Link> </li>
+                <li className='liwidth  d-flex align-items-center gap-2' > <RiAccountPinCircleFill className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="account"> <p className='m-0'>Account</p></Link> </li>
 
               </ul>
             </div>
