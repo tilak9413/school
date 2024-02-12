@@ -185,25 +185,28 @@ width: 345px !important;
 }
 .liwidth
 {
-  width: 190px;
+  width: 90%;
   padding: 10px;
 }
 ul li:hover
 {
-  background-color: #5a5a5a;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  /* background-color: #5a5a5a; */
+  background-color: #adb5bd;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
   border-radius: 12px;
-  color: #fff;
 } 
-ul li Link:hover
+ul li:hover p
 {
-  color: white;
+  color: black;
 }
-
+ul li:hover .iconcolor {
+  color: black;
+}
 .iconcolor
 {
   color: #81a4ff;
 }
+
 .dashcolor
 {
   color:#5a5a5a ;
@@ -408,4 +411,28 @@ ul li Link:hover
 .headee{
   margin-left: -12px;
   width: 101% !important;
+}
+
+table , th ,td {
+  border: 1px solid rgb(170, 170, 170) !important;
+  border-collapse: collapse !important;
+}
+.toptr{
+  background-color: #81a4ff !important;
+}
+
+.table
+{
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+border-radius: 12px;
+}
+
+label{
+  font-size: 15px;
+}
+td{
+  font-size: 18px;
+}
+tr{
+  border-bottom: 1px solid black;
 }

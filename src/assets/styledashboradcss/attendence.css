@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+.box-1 {
+    width: 99%;
+    height: auto;
+    margin-inline: auto;
+
+    border-radius: 10px;
+}
+
+
+
+.selectbg-1 {
+    background-color: rgb(235, 241, 248);
+    padding-top: 3px;
+    border: 2px solid #a18cdc;
+    height: 2.2rem;
+    margin-left: 20px;
+    color: black;
+    border-radius: 5px;
+
+    padding: 4px 4px 4px 8px;
+}
+.scrolltable{
+    
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.inputdate {
+    background-color: rgb(235, 241, 248);
+    border: 2px solid #a18cdc;
+    height: 2.2rem;
+    padding-top: 3px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 4px 4px 4px 8px;
+}
+
+.datebtn:hover {
+
+    background-color: #0c7716;
+    border: 2px solid rgb(86, 168, 86);
+    scale: 1.04;
+}
+
+.datebtn {
+    background-color: #14871f;
+    border: 2px solid rgb(17, 172, 17);
+    text-align: center;
+    padding-top: 3px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 0 2px 2px 0 solid #471AC8;
+}
+
+.box-2 {
+    background: #ffffff;
+    margin-inline: auto;
+    height: auto;
+    width: 99%;
+
+
+}
+
+.text-font {
+    font-size: 1.2rem;
+    margin-left: 20px;
+
+}
+
+.select-all-mark {
+    width: 50%;
+    padding-inline: 10px;
+    background-color: rgb(235, 241, 248);
+    border: 2px solid #a18cdc;
+}
+
+.nocolor {
+    background-color: #ffffff;
+    color: black;
+}
+
+.status {
+    padding: 8px;
+    border-radius: 10px !important;
+    padding-inline: 14px;
+    
+    color: #ffffff !important;
+    opacity: 45% !important;
+}
+
+.Present {
+    color: #14871f;
+    margin-inline: 10px;
+    font-weight: 700;
+}
+
+.Absent {
+    color: #14871f !important;
+    margin-inline: 10px !important;
+    font-weight: 700;
+}
+
+.HalfDay {
+    color: #14871f !important;
+    margin-inline: 10px !important;
+    font-weight: 700;
+}
+
+.profileimg {
+    height: 35px;
+    width: 35px;
+    padding: 0%;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.AbsentStatus {
+    padding: 8px;
+    border-radius: 10px !important;
+    padding-inline: 14px;
+    color: #ffffff !important;
+    opacity: 45% !important;
+}
+
+.HalfDaystatus {
+    padding: 8px !important;
+    border-radius: 10px !important;
+    padding-inline: 14px;
+    
+    color: #ffffff !important;
+    opacity: 45% !important;
+}

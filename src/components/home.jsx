@@ -25,16 +25,16 @@ function Home() {
             <div className='mt-4'>
               <ul className='list-items d-grid gap-1 '>
 
-                <li className='liwidth' > <MdDashboard className='iconcolor' /><Link className='text-decoration-none text-dark' to="/">Dashboard</Link></li>
-                <li className='liwidth'> <HiOfficeBuilding className='iconcolor' /> <Link className='text-decoration-none text-dark' to="office">Office</Link></li>
-                <li className='liwidth' >  <MdPlaylistAddCircle className='iconcolor' /><Link className='text-decoration-none text-dark' to="admissions">Admissions</Link> </li>
-                <li className='liwidth'>  <PiStudentBold className='iconcolor' /> <Link className='text-decoration-none text-dark' to="student">Students</Link>  </li>
-                <li  className='liwidth' > <MdClass className='iconcolor' />  <Link className='text-decoration-none text-dark' to="class">Class</Link></li>
-                <li  className='liwidth' > <FaHandPointer className='iconcolor' />  <Link className='text-decoration-none text-dark' to="attendance">Attendance</Link> </li>
-                <li  className='liwidth' > <FaMoneyCheckDollar className='iconcolor' /> <Link className='text-decoration-none text-dark' to="fees">Fees</Link> </li>
-                <li  className='liwidth' >  <PiExamFill className='iconcolor' /> <Link className='text-decoration-none text-dark' to="exams">Exams</Link> </li>
-                <li className='liwidth' > <FaMoneyCheck className='iconcolor' /> <Link className='text-decoration-none text-dark' to="staffpayroll">Staff payroll</Link> </li>
-                <li className='liwidth' > <RiAccountPinCircleFill className='iconcolor' /> <Link className='text-decoration-none text-dark' to="account"> Account</Link> </li>
+                <li className='liwidth d-flex align-items-center gap-2' > <MdDashboard className='iconcolor fs-4' /><Link className='text-decoration-none text-dark' to="/"><p className='m-0'>Dashboard</p></Link></li>
+                <li className='liwidth  d-flex align-items-center gap-2'> <HiOfficeBuilding className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="office"><p className='m-0'>Office</p></Link></li>
+                <li className='liwidth  d-flex align-items-center gap-2' >  <MdPlaylistAddCircle className='iconcolor  fs-4' /><Link className='text-decoration-none text-dark' to="admissions"><p className='m-0'>Admissions</p></Link> </li>
+                <li className='liwidth  d-flex align-items-center gap-2'>  <PiStudentBold className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="student"><p className='m-0'>Students</p></Link>  </li>
+                <li  className='liwidth  d-flex align-items-center gap-2' > <MdClass className='iconcolor  fs-4' />  <Link className='text-decoration-none text-dark' to="class"><p className='m-0'>Class</p></Link></li>
+                <li  className='liwidth  d-flex align-items-center gap-2' > <FaHandPointer className='iconcolor  fs-4' />  <Link className='text-decoration-none text-dark' to="attendance"><p className='m-0'>Attendance</p></Link> </li>
+                <li  className='liwidth  d-flex align-items-center gap-2' > <FaMoneyCheckDollar className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="fees"><p className='m-0'>Fees</p></Link> </li>
+                <li  className='liwidth  d-flex align-items-center gap-2' >  <PiExamFill className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="exams"><p className='m-0'>Exams</p></Link> </li>
+                <li className='liwidth  d-flex align-items-center gap-2' > <FaMoneyCheck className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="staffpayroll"><p className='m-0'>Staff payroll</p></Link> </li>
+                <li className='liwidth  d-flex align-items-center gap-2' > <RiAccountPinCircleFill className='iconcolor  fs-4' /> <Link className='text-decoration-none text-dark' to="account"> <p className='m-0'>Account</p></Link> </li>
 
               </ul>
             </div>

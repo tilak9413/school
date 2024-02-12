@@ -48,5 +48,17 @@
   {
     display:  none !important;
   }
+  .mheight
+  {
+    height: 600px;
+  }
   
+}
+
+/* *********************************************************************************** */
+/* studentregsiter */
+
+.lineheight
+{
+  padding: 0%;
 }

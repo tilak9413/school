@@ -72,7 +72,7 @@ function Dashborad() {
       </div>
 
       <div className='container-fluid  ' >
-        <div className='col-sm-12 row p-3  d-flex  align-items-center justify-content-between' >
+        <div className='col-sm-12 row p-3 gap-5 d-flex  align-items-center justify-content-between' >
           {/* <div className='col-sm-6  row cardgap justify-content-evenly '> */}
           <div className='col-sm-3   bgcolordash   d-flex rounded-3 textcenter ' >
               <div className='d-flex align-items-center gap-2  card-height ' >
@@ -122,18 +122,21 @@ function Dashborad() {
                   <option value="C">Cranberry</option>
                 </select>
               </div>
-              <div className='  cardt  align-items-center col-sm-12 d-flex justify-content-evenly '>
+              <div className='  cardt  grid align-items-center col-sm-12 d-flex justify-content-evenly '>
+                <div >
                 <Doughnut className='p-4 '
                   data={data}
                   options={options}
                   width={200}
                   height={200}
                 />
+                </div>
+               
                 <div className='  '>
-                  <div className='d-flex gap-1'>
+                  <div className='d-flex gap-1 '>
                     <div className='douth1 d-none  mt'></div><p className='fs-5' >  Girls:  <span>20</span></p>
                   </div>
-                  <div className='d-flex gap-1'>
+                  <div className='d-flex gap-1 '>
                     <div className='douth mt d-none'></div> <p className='fs-5' >Boys:  <span>50</span> </p>
                   </div>
                 </div>
@@ -141,8 +144,8 @@ function Dashborad() {
             </div>
           </div>
           <div className='col-sm-6 bg-white dispaly d-none celender mt-3 inputedit1   '>
-            <div className='app h-25   '>
-              <div className='calendar-container  '>
+            <div className='app h-25  '>
+              <div className='calendar-container mheight  '>
                 <p className=' fw-bold border-bottum'>Calendar</p>
                 <Calendar className="text-center"
                   onChange={setDate}
@@ -156,10 +159,10 @@ function Dashborad() {
             </div>
           </div>
 
-        <div className='container'>
+        <div className='container-fluid'>
           <div className='row'>
           <div className='col-sm-4 changecelender bg-white celender mt-3 inputedit1   '>
-            <div className='app h-25   '>
+            <div className='app   '>
               <div className='calendar-container  '>
                 <p className=' fw-bold border-bottum'>Calendar</p>
                 <Calendar className="text-center"
@@ -171,8 +174,8 @@ function Dashborad() {
 
             </div>
           </div>
-          <div className='col-sm-8 mt-3  '>
-            <div className='inputedit1 bg-white' >
+          <div className='col-sm-8 mt-3 celender media '>
+            <div className='inputedit1 bg-white celender overflow-scroll' >
               <div className='p-1'>
                 <p className='fw-bold'>Notices:</p>
               </div>
