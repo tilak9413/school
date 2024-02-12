@@ -43,9 +43,10 @@ const Attendancestudent = (props) => {
                 </div>
             </div>
             <div className="container-fluid rounded-3 p-3 mt-4 box-2 shadow border-2">
+    
 
                 <div className="row ">
-                    <div className="col-lg-12 d-flex flex-column flex-wrap   justify-content-around">
+                    <div className="col-lg-11 d-flex flex-column flex-wrap   justify-content-around">
                         <h4 className=' mt-4 ms-2 fs-4 fw-bold'>Students Attendance List</h4>
 
                         <div className="row w-lg-50 w-md-75 w-sm-75">
