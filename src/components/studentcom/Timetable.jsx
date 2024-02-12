@@ -55,7 +55,7 @@ function Timetable() {
 
                   </tr>
                   <tr>
-                    <th scope="row">9:30-10:30</th>
+                    <th scope="row" >9:30-10:30</th>
                     <td>ENGLISH</td>
                     <td>ENGLISH</td>
                     <td>Germany</td>
@@ -75,13 +75,7 @@ function Timetable() {
 
                   </tr>
                   <tr>
-                    <th scope="row">11:30-12:15</th>
-                    <td>RECESS</td>
-                    <td>RECESS</td>
-                    <td>RECESS</td>
-                    <td>RECESS</td>
-                    <td>RECESS</td>
-                    <td>RECESS</td>
+                    <th scope="row" colSpan={"7"}  >11:30-12:15     RECESS  </th>
                   </tr>
                   <tr>
                     <th scope="row">12:15-12:40</th>
