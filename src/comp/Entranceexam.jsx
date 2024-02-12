@@ -21,17 +21,17 @@ function Entranceexam() {
                   <label for="exampleInputEmail1 " className='col-auto m-0'>Enter Your Name :</label>
                   <input
                     type="text"
-                    className="form-control w-80 ms-1 col-sm-8"
+                    className="form-control w-80 ms-1 inputit col-sm-8"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Your Name..."
                   />
                 </div>
                 <div className="form-group p-2 row   d-flex align-items-center">
-                  <label for="exampleInputPassword1" className='m-0 col-auto'>Enter Your Roll no :</label>
+                  <label for="exampleInputPassword1" className=' col-4 m-0 col-auto'>Enter Your Roll no :</label>
                   <input
                     type="text"
-                    className="form-control w-80 col-sm-8"
+                    className="form-control inputit w-80 col-sm-4"
                     id="roll"
                     placeholder="Roll no..."
                   />
