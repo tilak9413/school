@@ -23,7 +23,7 @@ function Home() {
       style={{ height: "100vh", backgroundColor:"#280D3B"}}className="col-sm-2 p-1 position-fixed  border-end  d-none d-xl-block   align-items-center  "
     >
       <div className="d-flex align-items-center gap-3 p-3 border-bottom">
-        <img
+        <img style={{filter: 'invert(1)'}}
           className="img-fluid logosize"
           src="public\image\logo-removebg-preview.png"
           alt=""

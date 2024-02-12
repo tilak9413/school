@@ -73,7 +73,7 @@ function Dashborad() {
       <div className='container-fluid  p-0' >
         <div className='col-sm-12 p-2  d-flex  align-items-center justify-content-between' >
           <div className='col-sm-3   ' >
-            <div className=' fourbgcolorhead   me-2 d-flex rounded-3 textcenter'>
+            <div className='me-2 d-flex rounded-3 textcenter'>
               <div style={{backgroundColor:"#EEE0B1"}} className='d-flex px-3  w-100 align-items-center text-dark justify-content-evenly gap-2  card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold text-dark '>Total student : <span>5400</span></span>
               </div>
@@ -82,15 +82,15 @@ function Dashborad() {
            
             <div className='col-sm-3   ' >
             <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
-              <div  style={{backgroundColor:"#280D3B"}} className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
+              <div  style={{backgroundColor:"#280D3B"}} className='rounded-3 d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
               </div>
             </div>
 
             <div className='col-sm-3   ' >
-            <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
-              <div style={{backgroundColor:"#EEE0B1"}} className='d-flex px-3 text-dark w-100 align-items-center justify-content-evenly gap-2 card-height' >
+            <div className='mx-2 d-flex rounded-3 textcenter'>
+              <div style={{backgroundColor:"#EEE0B1"}} className='d-flex px-3 text-dark w-100 align-items-center justify-content-evenly gap-2 card-height rounded-3' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
               </div>
@@ -98,7 +98,7 @@ function Dashborad() {
             
             <div className='col-sm-3   ' >
             <div className=' fourbgcolorhead   mx-2 d-flex rounded-3 textcenter'>
-              <div  style={{backgroundColor:"#280D3B"}} className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
+              <div  style={{backgroundColor:"#280D3B"}} className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height rounded-3' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
               </div>
@@ -108,7 +108,7 @@ function Dashborad() {
           <div className='container-fluid'>
             <div className='row' >
             <div  className="col-xl-8 col-sm-5 col-md-6 col-12 media overflow-scroll chart-height inputedit1 mt-3  bg-white ">
-            <Chart style={{width:"800px"}}  className="mediachange"
+            <Chart style={{width:"850px"}}  className="mediachange"
               series={state.series}
               options={state.options}
 
@@ -119,7 +119,7 @@ function Dashborad() {
           </div>
           <div className='col-xl-4 col-sm-6 col-12 col-md-6  mt-3  '>
             <div className='   col-sm-12 border inputedit1     bg-white '>
-              <div className=' d-flex  align-items-center justify-content-between col-sm-12 p-1 '>
+              <div className=' d-flex  align-items-center justify-content-between col-sm-12 p-1 px-3 '>
                 <span className=' fw-bold border-bottum' >Student</span>
                 <select value="optionsState" className='formselect form-select '>
                   <option value="A">class 9</option>
@@ -129,11 +129,11 @@ function Dashborad() {
               </div>
               <div className='  cardt  grid align-items-center col-sm-12 d-flex justify-content-evenly '>
                 <div >
-                <Doughnut className='p-4 '
+                <Doughnut className='p-1 '
                   data={data}
                   options={options}
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                 />
                 </div>
                
@@ -148,7 +148,7 @@ function Dashborad() {
               </div>
             </div>
           </div>
-          <div className='col-sm-6 bg-white dispaly d-none celender mt-3 inputedit1   '>
+          {/* <div className='col-sm-6 bg-white dispaly d-none celender mt-3 inputedit1   '>
             <div className='app h-25  '>
               <div className='calendar-container mheight  '>
                 <p className=' fw-bold border-bottum px-2'>Calendar</p>
@@ -160,16 +160,16 @@ function Dashborad() {
               </div>
 
             </div>
-          </div>
+          </div> */}
             </div>
           </div>
 
         <div className='container-fluid'>
           <div className='row'>
-          <div className='col-sm-4 changecelender bg-white celender mt-3 inputedit1   '>
+          <div className='col-sm-4 px-3 changecelender bg-white celender mt-3 inputedit1   '>
             <div className='app   '>
-              <div className='calendar-container  '>
-                <p className=' fw-bold border-bottum'>Calendar</p>
+              <div className='calendar-container'>
+                <p className=' fw-bold border-bottum ps-1 pt-1'>Calendar</p>
                 <Calendar className="text-center"
                   onChange={setDate}
                   value={date}
