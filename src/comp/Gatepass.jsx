@@ -3,8 +3,32 @@ import { useState } from "react";
 import Purpose from "./purpose";
 import "../App.css";
 import "../components/office.css";
-
+import { useRef } from "react";
 const Gatepass = () => {
+  const inputRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    // Add more refs for additional input fields if needed
+  ];
+
+  // Function to focus on the next input field
+  const focusNextInput = (index) => {
+    // If current input is not the last one
+    if (index < inputRefs.length - 1) {
+      inputRefs[index + 1].current.focus(); // Focus on the next input field
+    }
+  };
+
+  const handleKeyPress = (event, index) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent default form submission behavior
+      focusNextInput(index); // Focus on the next input field
+    }
+  };
   const [fullName, setFullName] = useState("");
   const [contactNo, setContactNo] = useState("");
   const [email, setEmail] = useState("");
@@ -41,7 +65,7 @@ const Gatepass = () => {
               <div className="col">
                 <label htmlFor="">Full Name: </label>
                 <input
-                  type="text"
+                  type="text" ref={inputRefs[0]}  onKeyPress={(event) => handleKeyPress(event, 0)}
                   className="form-control"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
@@ -49,7 +73,7 @@ const Gatepass = () => {
               </div>
               <div className="col">
                 <label htmlFor="">Contact No: </label>
-                <input
+                <input ref={inputRefs[1]}  onKeyPress={(event) => handleKeyPress(event, 1)}
                   type="text"
                   className="form-control"
                   value={contactNo}
@@ -58,7 +82,7 @@ const Gatepass = () => {
               </div>
               <div className="col">
                 <label htmlFor="">Email Address: </label>
-                <input
+                <input ref={inputRefs[2]}  onKeyPress={(event) => handleKeyPress(event, 2)}
                   type="email"
                   className="form-control"
                   value={email}
@@ -69,7 +93,7 @@ const Gatepass = () => {
             <div className="row px-3 py-2">
               <div className="col">
                 <label htmlFor="">Supplier Type: </label>
-                <select name="" id="" className="form-control">
+                <select name="" id="" className="form-control" ref={inputRefs[3]}  onKeyPress={(event) => handleKeyPress(event, 3)}>
                   <option value="">Student</option>
                   <option value="">Teacher</option>
                   <option value="">Guardians</option>
@@ -77,12 +101,12 @@ const Gatepass = () => {
               </div>
               <div className="col">
                 <label htmlFor="">Supplier Id: </label>
-                <input type="text" className="form-control" value={studentId}
+                <input ref={inputRefs[4]}  onKeyPress={(event) => handleKeyPress(event, 4)} type="text" className="form-control" value={studentId}
                   onChange={(e) => setStudentId(e.target.value)}/>
               </div>
               <div className="col">
                 <label htmlFor="">Valid Upto: </label>
-                <input
+                <input ref={inputRefs[5]}  onKeyPress={(event) => handleKeyPress(event, 5)}
                   type="date"
                   className="form-control"
                   value={validUpto}

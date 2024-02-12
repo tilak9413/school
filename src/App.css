@@ -191,17 +191,16 @@ width: 345px !important;
 ul li:hover
 {
   /* background-color: #5a5a5a; */
-  background-color: #023047;
+  background-color: #adb5bd;
   /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
   border-radius: 12px;
-  color: #fff;
 } 
 ul li:hover p
 {
-  color: white;
+  color: black;
 }
 ul li:hover .iconcolor {
-  color: #fff;
+  color: black;
 }
 .iconcolor
 {

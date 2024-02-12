@@ -11,8 +11,33 @@ import { FaPen } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import Purpose from "../comp/purpose";
 import { FaCloudUploadAlt } from "react-icons/fa";
-
+import { useRef } from "react";
 function Complaint() {
+  const inputRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    // Add more refs for additional input fields if needed
+  ];
+
+  // Function to focus on the next input field
+  const focusNextInput = (index) => {
+    // If current input is not the last one
+    if (index < inputRefs.length - 1) {
+      inputRefs[index + 1].current.focus(); // Focus on the next input field
+    }
+  };
+
+  const handleKeyPress = (event, index) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent default form submission behavior
+      focusNextInput(index); // Focus on the next input field
+    }
+  };
   return (
     <>
       <div className="mx-auto mt-3 px-4">
@@ -99,7 +124,7 @@ function Complaint() {
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">Complaint Type: </label>
-                    <select name="" id="" className="form-control">
+                    <select name="" id="" className="form-control" ref={inputRefs[0]}  onKeyPress={(event) => handleKeyPress(event, 0)}>
                       <option value="">General</option>
                       <option value="">Danger</option>
                       <option value="">Serious</option>
@@ -107,7 +132,7 @@ function Complaint() {
                   </div>
                   <div className="col-2">
                     <label htmlFor="">Source: </label>
-                    <select name="" id="" className="form-control">
+                    <select name="" id="" className="form-control" ref={inputRefs[1]}  onKeyPress={(event) => handleKeyPress(event, 1)}>
                       <option value="">Student</option>
                       <option value="">Parents</option>
                       <option value="">Mother</option>
@@ -115,27 +140,27 @@ function Complaint() {
                   </div>
                   <div className="col">
                     <label htmlFor="">Complaint By: </label>
-                    <input className="form-control" type="text" placeholder="Name of Person who complain"/>
+                    <input ref={inputRefs[2]}  onKeyPress={(event) => handleKeyPress(event, 2)} className="form-control" type="text" placeholder="Name of Person who complain"/>
                   </div>
                 </div>
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">Phone no </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[3]}  onKeyPress={(event) => handleKeyPress(event, 3)} className="form-control" type="text" />
                   </div>
                   <div className="col-2">
                     <label htmlFor="">Date: </label>
-                    <input className="form-control" type="date" />
+                    <input ref={inputRefs[4]}  onKeyPress={(event) => handleKeyPress(event, 4)} className="form-control" type="date" />
                   </div>
                   <div className="col">
                     <label htmlFor="">Description: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[5]}  onKeyPress={(event) => handleKeyPress(event, 5)} className="form-control" type="text" />
                   </div>
                 </div>
                 <div className="row px-4 py-2 gap-5">
                   <div className="col-2">
                     <label htmlFor="">Action Taken: </label>
-                    <input className="form-control" type="text" />
+                    <input ref={inputRefs[6]}  onKeyPress={(event) => handleKeyPress(event, 6)} className="form-control" type="text" />
                   </div>
                   <div className="col-4">
                     <label htmlFor="">Attach Document: </label>
