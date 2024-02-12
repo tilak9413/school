@@ -1,33 +1,49 @@
-import React from 'react'
-import '../assets/styledashboradcss/addmition.css'
-
-
-
+import React from "react";
+import "../assets/styledashboradcss/addmition.css";
+import '../App.css'
 function MeritList() {
   return (
-    <div className='m-2 px-2 border shadow rounded'>
+    <div className="m-2 px-2 border shadow rounded">
       <div>
-        <h6 className='text-success my-3 fw-semibold '> Check Marit List :</h6>
-        <form >
+        <h6 className="text-success my-3 fw-semibold "> Check Marit List :</h6>
+        <form>
           <div className="row px-sm-5 mx-sm-5   ">
-          <div className="d-flex gap-3 align-items-center col-sm-6 mb-2 ">
-            <label className='m-0 ' htmlFor="">Application No. :</label>
-            <input type="text" placeholder='Enter Application No... '  className='inputit w-sm-50  '  />
-          </div>
+            <div className="d-flex gap-3 align-items-center col-sm-6 mb-2 ">
+              <label className="m-0 " htmlFor="">
+                Application No. :
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Application No... "
+                className="inputit w-sm-50  "
+              />
+            </div>
 
-          <div className="d-flex gap-3 align-items-center col-sm-6 ">
-            <label className='m-0' htmlFor="">Date of Birth : </label>
-            <input type="text" placeholder='Enter Application No... '  className='inputit w-50'  />
-          </div>
+            <div className="d-flex gap-3 align-items-center col-sm-6 ">
+              <label className="m-0" htmlFor="">
+                Date of Birth :{" "}
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Application No... "
+                className="inputit w-50"
+              />
+            </div>
 
-          <div className="d-flex gap-3 align-items-center col-sm-6  ">
-            <label className='m-0' htmlFor="">Captcha Code :</label>
-            <input type="text" placeholder='Enter Application No... '  className='inputit w-50 mx-2'  />
-          </div>
+            <div className="d-flex gap-3 align-items-center col-sm-6  ">
+              <label className="m-0" htmlFor="">
+                Captcha Code :
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Application No... "
+                className="inputit w-50 mx-2"
+              />
+            </div>
           </div>
         </form>
         <hr />
-        <table className='table bg-white ' >
+        {/* <table className='table bg-white ' >
               <tr className='toptr'>
                 <th style={{ width: "2%" }}>SR.NO </th>
                 <th>GR NO.</th>
@@ -84,10 +100,44 @@ function MeritList() {
                 <td>Giovanni Rovelli</td>
                 <td>Italy</td>
               </tr>
+            </table> */}
+        <div className="row">
+          <div className="col">
+            <table class="table table-hover rounded-3 overflow-hidden">
+              <thead className="bgcolordash">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
             </table>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default MeritList
+export default MeritList;
