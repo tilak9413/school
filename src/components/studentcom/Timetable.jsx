@@ -75,7 +75,8 @@ function Timetable() {
 
                   </tr>
                   <tr>
-                    <th scope="row" colSpan={"7"}  >11:30-12:15     RECESS  </th>
+                    <th scope="row">11:30-12:15  </th>
+                    <td  colSpan={"7"}  >RECESS</td>
                   </tr>
                   <tr>
                     <th scope="row">12:15-12:40</th>
