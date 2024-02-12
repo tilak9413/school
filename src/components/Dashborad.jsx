@@ -56,6 +56,7 @@ function Dashborad() {
         bodercolror: [
           'rgba(255, 99, 132, 1)',
         ],
+        
 
       }
     ]
