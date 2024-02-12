@@ -185,25 +185,29 @@ width: 345px !important;
 }
 .liwidth
 {
-  width: 190px;
+  width: 200px;
   padding: 10px;
 }
 ul li:hover
 {
-  background-color: #5a5a5a;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  /* background-color: #5a5a5a; */
+  background-color: #023047;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
   border-radius: 12px;
   color: #fff;
 } 
-ul li Link:hover
+ul li:hover p
 {
   color: white;
 }
-
+ul li:hover .iconcolor {
+  color: #fff;
+}
 .iconcolor
 {
   color: #81a4ff;
 }
+
 .dashcolor
 {
   color:#5a5a5a ;
