@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../assets/styledashboradcss/addmition.css";
 import '../App.css'
-
+import Captcha from "./Captcha";
 function MeritList() {
   const inputRefs = [
     useRef(null),
@@ -61,13 +61,14 @@ function MeritList() {
               <label className="m-0" htmlFor="">
                 Captcha Code :
               </label>
-              <input
+              {/* <input
                 ref={inputRefs[2]}
                 onKeyPress={(event) => handleKeyPress(event, 2)}
                 type="text"
                 placeholder="Enter Captcha Code... "
                 className="inputit w-50 mx-2 form-control"
-              />
+              /> */}
+              <Captcha />
             </div>
           </div>
         </form>
