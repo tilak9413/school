@@ -74,7 +74,7 @@ const Attendancestaff = (props) => {
                                         </div>
 
                                     </div>
-                                    <div className="col-lg-4 col-sm-12 col-md-6 d-flex ms-5 d-flex justify-content-center">
+                                    <div className="col-lg-5 col-sm-12 col-md-6 d-flex ms-5 d-flex justify-content-center">
                                         <select name="" className='select-all-mark rounded-3' id="">
                                             <option className='nocolor' value="">Mark All Attendance</option>
                                             <option className='nocolor' value="">29</option>
