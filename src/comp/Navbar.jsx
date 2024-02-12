@@ -7,7 +7,7 @@ import '../App.css'
 const Navbar = () => {
   return (
     <>
-    <div className=" bgcolordash shadow headee d-flex justify-content-end fs-3 text-light align-items-center p-3 mb-2">
+    <div className=" bgcolorhead shadow headee d-flex justify-content-end fs-3 text-light align-items-center p-3 mb-2">
         <div className="icons d-flex gap-4 ">
         <div className='d-none d-col-sm-block' >
       <IoReorderThreeSharp/>

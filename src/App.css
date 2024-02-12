@@ -202,6 +202,14 @@ ul li:hover p
 ul li:hover .iconcolor {
   color: black;
 }
+.active {
+  background-color: #adb5bd;
+  color: #000000;
+  border-radius: 12px;
+}
+.active :nth-child(1){
+  color: black;
+}
 .iconcolor
 {
   color: #81a4ff;
@@ -218,8 +226,20 @@ ul li:hover .iconcolor {
 } 
 .bgcolordash
 {
+  background-color: #adb5bd;
+}
+
+.bgcolorhead{
   background-color: #81a4ff;
 }
+/* 81a4ff */
+
+.fourbgcolorhead{
+  background-color: rgb(7 31 71);
+  color: white;
+    border-radius: 5px;
+}
+
 
 .welcomedash
 {

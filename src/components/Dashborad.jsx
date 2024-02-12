@@ -10,7 +10,6 @@ import Chart from "react-apexcharts";
 import '../assets/styledashboradcss/dashborad.css';
 
 
-
 function Dashborad() {
 
 
@@ -71,33 +70,39 @@ function Dashborad() {
         <Navbar />
       </div>
 
-      <div className='container-fluid  ' >
-        <div className='col-sm-12 row p-3 gap-5 d-flex  align-items-center justify-content-between' >
-          {/* <div className='col-sm-6  row cardgap justify-content-evenly '> */}
-          <div className='col-sm-3   bgcolordash   d-flex rounded-3 textcenter ' >
-              <div className='d-flex align-items-center gap-2  card-height ' >
-                <PiStudentFill className=' fs-3 ' /> <span>Total student : <span>5400</span></span>
+      <div className='container-fluid  p-0' >
+        <div className='col-sm-12 p-2  d-flex  align-items-center justify-content-between' >
+          <div className='col-sm-3   ' >
+            <div className=' fourbgcolorhead   me-2 d-flex rounded-3 textcenter'>
+              <div className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
+                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
+              </div>
               </div>
             </div>
-            {/* <div className='col-sm3  bgcolordash h-100  d-flex rounded-3 textcenter ' >
-              <div className='d-flex align-items-center  gap-2 card-height ' >
-                <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
+           
+            <div className='col-sm-3   ' >
+            <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
+              <div className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
+                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
-            {/* </div> */}
-          {/* </div>  */}
-          {/* <div className='col-sm-6  row justify-content-evenly columngap  ' > */}
-            <div className='col-sm-3  border  bgcolordash h-100  d-flex rounded-3 textcenter ' >
-              <div className='d-flex align-items-center gap-2 card-height ' >
-                <PiStudentFill className=' fs-3 boder' /> <span>Total student : <span>5400</span></span>
               </div>
+            </div>
 
-            </div>
-            <div className='col-sm-3   bg-dark text-white rounded-3 h-100  d-flex textcenter ' >
-              <div className='d-flex align-items-center card-height gap-2'>
-                <FaChalkboardTeacher className='fs-3 boder' />  <span> Total teachers : <span> 64654</span> </span>
+            <div className='col-sm-3   ' >
+            <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
+              <div className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
+                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
+              </div>
               </div>
             </div>
-          {/* </div> */}
+            
+            <div className='col-sm-3   ' >
+            <div className=' fourbgcolorhead   mx-2 d-flex rounded-3 textcenter'>
+              <div className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
+                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
+              </div>
+              </div>
+            </div>
           </div>
           </div>
           <div className='container-fluid'>
@@ -146,7 +151,7 @@ function Dashborad() {
           <div className='col-sm-6 bg-white dispaly d-none celender mt-3 inputedit1   '>
             <div className='app h-25  '>
               <div className='calendar-container mheight  '>
-                <p className=' fw-bold border-bottum'>Calendar</p>
+                <p className=' fw-bold border-bottum px-2'>Calendar</p>
                 <Calendar className="text-center"
                   onChange={setDate}
                   value={date}

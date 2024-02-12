@@ -18,25 +18,25 @@ function Entranceexam() {
                   </div>
                 </div>
                 <div className=" row form-group p-2 d-flex align-items-center ">
-                  <label for="exampleInputEmail1 " className='col-auto m-0'>Enter Your Name :</label>
+                  <label for="exampleInputEmail1 " className='col-sm-3 m-0'>Enter Your Name :</label>
                   <input
                     type="text"
-                    className="form-control w-80 ms-1 col-sm-8"
+                    className="form-control w-70 col-sm-4 inputit "
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Your Name..."
                   />
                 </div>
-                <div className="form-group p-2 row   d-flex align-items-center">
-                  <label for="exampleInputPassword1" className='m-0 col-auto'>Enter Your Roll no :</label>
+                <div className=" px-2 row  align-items-center">
+                  <label for="exampleInputPassword1" className=' col-sm-3 m-0 col-auto'>Enter Your Roll no :</label>
                   <input
                     type="text"
-                    className="form-control w-80 col-sm-8"
+                    className="form-control inputit   w-70 col-sm-4"
                     id="roll"
                     placeholder="Roll no..."
                   />
                 </div>
-<div className='d-flex  float-end'>
+<div className='d-flex  mx-3 mt-2 float-end'>
 <button type="submit" class="btn btn-sm btn-success float-end  btn-primary">
                       reset
                     </button>

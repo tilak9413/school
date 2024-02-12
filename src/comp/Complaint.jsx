@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../comp/Navbar";
-import Welcome from "../comp/Welcome";
 import { FiPrinter } from "react-icons/fi";
 import { GrDocument } from "react-icons/gr";
 import { FaRegCopy } from "react-icons/fa";
@@ -14,6 +12,7 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 import { useRef } from "react";
 function Complaint() {
   const inputRefs = [
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -164,10 +163,12 @@ function Complaint() {
                   </div>
                   <div className="col-4">
                     <label htmlFor="">Attach Document: </label>
-                    <div className="border form-control d-flex justify-content-center align-items-center gap-2">
-                      <FaCloudUploadAlt className="fs-4" />
-                      Drag and drop a file or click
-                    </div>
+                    <input  ref={inputRefs[7]}
+                      onKeyPress={(event) => handleKeyPress(event, 7)}
+                        type="file"
+                        id="input-file-now"
+                        className="file-upload form-control"
+                      />
                   </div>
                   <div className="col pt-2 d-flex justify-content-end">
                     <button className="btn btn-primary mt-4">Save</button>

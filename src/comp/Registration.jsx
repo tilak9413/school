@@ -3,8 +3,7 @@ import InputComp from '../comp/InputComp'
 import '../assets/styledashboradcss/addmition.css'
 import { useState } from 'react'
 import '../../public/assets/css/style.css'
-import { useRef } from 'react'
-
+import { IoIosCloudUpload } from "react-icons/io";
 function Registration() {
 
     const [studentImage, setstudentImage] = useState("")
@@ -145,9 +144,9 @@ function Registration() {
                   <span className='w-100 text-center'> Upload Image</span>
 
                 </button>
-                <div className='border imga w-75  my-4'>
+                <div className='border imga w-75 d-flex justify-content-center align-items-center my-4'>
                   {
-                    studentImage ? <img src={studentImage} className='w-100 h-100 rounded p-1 ' alt="" /> : ""
+                    studentImage ? <img src={studentImage} className='w-100 h-100 rounded p-1 ' alt="" /> :  <IoIosCloudUpload className='opacity-25' style={{fontSize : "100px" }} />
                   }
                 </div>
 
@@ -158,9 +157,9 @@ function Registration() {
                   <span className='w-100 text-center'> Upload Signature</span>
 
                 </button>
-                <div className='border imga w-75  my-4'>
+                <div className='border imga w-75 d-flex justify-content-center align-items-center my-4'>
                   {
-                    studentImage ? <img src={studentSign} className='w-100 h-100 rounded p-1 ' alt="" /> : ""
+                    studentImage ? <img src={studentSign} className='w-100 h-100 rounded p-1 ' alt="" /> : <IoIosCloudUpload className='opacity-25' style={{fontSize : "100px" }} />
                   }
                 </div>
               
