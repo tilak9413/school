@@ -2,8 +2,6 @@
     display: none;
 }
 
-
-
 table , th ,td {
     border: 1px solid rgb(170, 170, 170) !important;
     border-collapse: collapse !important;

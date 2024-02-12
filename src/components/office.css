@@ -77,8 +77,6 @@ td{
   opacity: 0;
   visibility: hidden;
 }
-
 .isSelected {
-  color: #006341;
-  font-weight: bold;
+  
 }
