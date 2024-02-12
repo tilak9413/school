@@ -15,7 +15,7 @@ function Dashborad() {
 
   const [state, setState] = React.useState({
     options: {
-      colors: ["#81a4ff", "black"],
+      colors: ["#EEE0B1", "black"],
       chart: {
         id: "basic-bar",
       },
@@ -51,7 +51,7 @@ function Dashborad() {
         data: [10, 20],
         backgroundColor: [
           'black',
-          "#81a4ff"
+          "#EEE0B1"
         ],
         bodercolror: [
           'rgba(255, 99, 132, 1)',
@@ -74,15 +74,15 @@ function Dashborad() {
         <div className='col-sm-12 p-2  d-flex  align-items-center justify-content-between' >
           <div className='col-sm-3   ' >
             <div className=' fourbgcolorhead   me-2 d-flex rounded-3 textcenter'>
-              <div className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
-                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
+              <div style={{backgroundColor:"#EEE0B1"}} className='d-flex px-3  w-100 align-items-center text-dark justify-content-evenly gap-2  card-height' >
+                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold text-dark '>Total student : <span>5400</span></span>
               </div>
               </div>
             </div>
            
             <div className='col-sm-3   ' >
             <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
-              <div className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
+              <div  style={{backgroundColor:"#280D3B"}} className='d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
               </div>
@@ -90,7 +90,7 @@ function Dashborad() {
 
             <div className='col-sm-3   ' >
             <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
-              <div className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
+              <div style={{backgroundColor:"#EEE0B1"}} className='d-flex px-3 text-dark w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
               </div>
@@ -98,7 +98,7 @@ function Dashborad() {
             
             <div className='col-sm-3   ' >
             <div className=' fourbgcolorhead   mx-2 d-flex rounded-3 textcenter'>
-              <div className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
+              <div  style={{backgroundColor:"#280D3B"}} className='d-flex px-3 w-100 align-items-center justify-content-evenly gap-2 card-height' >
                 <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
               </div>
               </div>
