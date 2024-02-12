@@ -413,3 +413,27 @@ ul li:hover .iconcolor {
   margin-left: -12px;
   width: 101% !important;
 }
+
+table , th ,td {
+  border: 1px solid rgb(170, 170, 170) !important;
+  border-collapse: collapse !important;
+}
+.toptr{
+  background-color: #81a4ff !important;
+}
+
+.table
+{
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+border-radius: 12px;
+}
+
+label{
+  font-size: 15px;
+}
+td{
+  font-size: 18px;
+}
+tr{
+  border-bottom: 1px solid black;
+}

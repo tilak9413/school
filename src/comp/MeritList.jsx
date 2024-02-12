@@ -103,33 +103,57 @@ function MeritList() {
             </table> */}
         <div className="row">
           <div className="col">
-            <table class="table table-hover rounded-3 overflow-hidden">
+            <table class="table table-hover rounded-3 ">
               <thead className="bgcolordash">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                <tr className="toptr">
+                <th  scope="col">SR.NO </th>
+                <th >GR NO.</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Father Name</th>
+                <th scope="col">Date Of Birth</th>
+                <th scope="col">Blood Group</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>Maria Anders</td>
+                <td>Germany</td>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>Francisco Chang</td>
+                <td>Mexico</td>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>@twitter</td>
+                  <td>Roland Mendel</td>
+                <td>Austria</td>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Helen Bennett</td>
+                <td>UK</td>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
                 </tr>
               </tbody>
             </table>
