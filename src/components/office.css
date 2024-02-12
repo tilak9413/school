@@ -5,11 +5,73 @@ td{
   cursor: pointer;
 }
 .icons:hover{
-  color: orange;
+  color: #006341;
 }
-label{
-  font-size: 15px;
+
+.output {
+  justify-content: center;
+  align-content: start;
+  padding-top: 1rem;
 }
-td{
-  font-size: 18px;
+
+.ac-card {
+  display: grid;
+  grid-template-columns: 173px 1fr 50px;
+  background-color: #fff;
+  width: 412.5px;
+  height: 250px;
+  margin-bottom: 1rem;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+}
+
+.ac-icon {
+  width: 40px;
+  margin-top: 10px;
+}
+
+.ac-card-image {
+  height: 168px;
+  width: 131px;
+  margin: 10px 0 0 15px;
+  border: 3px solid #006341;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+.ac-card-image img{
+  width: 100%;
+}
+.ac-card-info {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.ac-card-info p {
+  margin-top: 8px;
+  line-height: 1.3;
+}
+
+.ac-card-footer {
+  display: grid;
+  align-content: center;
+  grid-column: 1/-1;
+  align-self: end;
+  height: 56.5px;
+  background-color: #006341; 
+}
+
+.ac-logo {
+  width: 125px;
+  margin-left: 10px;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.isSelected {
+  
 }

@@ -1,5 +1,7 @@
 import React from 'react'
-import '../../public/assets/css/style.css'
+import '../assets/styledashboradcss/addmition.css'
+
+
 
 function MeritList() {
   return (
@@ -8,7 +10,7 @@ function MeritList() {
         <h6 className='text-success my-3 fw-semibold '> Check Marit List :</h6>
         <form >
           <div className="row px-sm-5 mx-sm-5   ">
-          <div className="d-flex gap-3 align-items-center col-sm-6  ">
+          <div className="d-flex gap-3 align-items-center col-sm-6 mb-2 ">
             <label className='m-0 ' htmlFor="">Application No. :</label>
             <input type="text" placeholder='Enter Application No... '  className='inputit w-sm-50  '  />
           </div>
@@ -18,16 +20,15 @@ function MeritList() {
             <input type="text" placeholder='Enter Application No... '  className='inputit w-50'  />
           </div>
 
-          <div className="d-flex gap-3 align-items-center col-sm-6 ">
+          <div className="d-flex gap-3 align-items-center col-sm-6  ">
             <label className='m-0' htmlFor="">Captcha Code :</label>
-            <input type="text" placeholder='Enter Application No... '  className='inputit w-50'  />
+            <input type="text" placeholder='Enter Application No... '  className='inputit w-50 mx-2'  />
           </div>
           </div>
         </form>
         <hr />
-        
         <table className='table bg-white ' >
-              <tr>
+              <tr className='toptr'>
                 <th style={{ width: "2%" }}>SR.NO </th>
                 <th>GR NO.</th>
                 <th>Student Name</th>
