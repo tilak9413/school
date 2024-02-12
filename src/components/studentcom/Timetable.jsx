@@ -1,5 +1,6 @@
 import React from 'react'
 import Dropdown from '../../comp/dropdown'
+import '../../../public/assets/css/style.css'
 function Timetable() {
   return (
     <>
@@ -35,6 +36,8 @@ function Timetable() {
                 <td>Germany</td>
                 <td>HISTORY</td>
                 <td>Germany</td>
+                <td>ENGLISH</td>
+                <td>ENGLISH</td>
               </tr>
               <tr>
               <td>MATHS</td>
@@ -42,7 +45,8 @@ function Timetable() {
                 <td>SCEINCE</td>
                 <td>PT</td>
                 <td>PT</td>
-                <td>Mexico</td>
+                <td>PT</td>
+                <td>MATH</td>
               </tr>
               <tr>
               <td>SCIENCE</td>
@@ -50,7 +54,7 @@ function Timetable() {
                 <td>MATH</td>
                 <td>MATH</td>
                 <td>SCIENCE</td>
-                <td>Austria</td>
+                <td>MaTH</td>
               </tr>
               <tr>
               <td>HISTORY</td>
@@ -59,22 +63,7 @@ function Timetable() {
                 <td>SCEINCE</td>
                 <td>-</td>
                 <td>UK</td>
-              </tr>
-              <tr>
-                
-                {/* <td>Yoshi Tannamuri</td> */}
-                <td></td>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-              </tr>
-              <tr>
-            
-                {/* <td>Giovanni Rovelli</td> */}
-                <td>Italy</td>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
+                <td>Us</td>
               </tr>
             </table>
         </div>
