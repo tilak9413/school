@@ -27,7 +27,6 @@ function MeritList() {
 
   return (
     <div className="m-2 px-2 border shadow rounded">
-      <div>
         <h6 className="text-success my-3 fw-semibold "> Check Marit List :</h6>
         <form>
           <div className="row px-sm-5 mx-sm-5   ">
@@ -132,7 +131,6 @@ function MeritList() {
             </table>
           </div>
         </div>
-      </div>
     </div>
   );
 }
