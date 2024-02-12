@@ -8,8 +8,30 @@ import { FaCaretDown } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import InwardDispatch from "../comp/InwardDispatch";
-
+import { useRef } from 'react';
 const Permission = () => {
+
+  const inputRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    // Add more refs for additional input fields if needed
+  ];
+
+  // Function to focus on the next input field
+  const focusNextInput = (index) => {
+    // If current input is not the last one
+    if (index < inputRefs.length - 1) {
+      inputRefs[index + 1].current.focus(); // Focus on the next input field
+    }
+  };
+
+  const handleKeyPress = (event, index) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent default form submission behavior
+      focusNextInput(index); // Focus on the next input field
+    }
+  };
   return (
     <>
     <div className="row gap-5 px-4 mt-3">
@@ -25,21 +47,23 @@ const Permission = () => {
               </div>
               <div className="form-group p-2 m-0">
                 <label for="exampleInputEmail1">Permission Type :</label>
-                <input
+                <input ref={inputRefs[0]}
                   type="email"
                   className="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Permission of Leave"
+                  onKeyPress={(event) => handleKeyPress(event, 0)}
                 />
               </div>
               <div className="form-group p-2 m-0">
                 <label for="exampleInputPassword1">Description :</label>
-                <input
+                <input ref={inputRefs[1]} 
                   type="textbox"
                   className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Enter something here..."
+                  onKeyPress={(event) => handleKeyPress(event, 1)}
                 />
                 
               </div>

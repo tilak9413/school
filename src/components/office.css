@@ -72,7 +72,11 @@ td{
   opacity: 0;
   visibility: hidden;
 }
+.myButton{
+  transition: all ease .2s;
+}
 .myButton:hover {
-  background-color: #006341;
-  color: white;
+  background-color: #adb5bd;
+  color: black;
+  font-weight: bold;
 }
