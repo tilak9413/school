@@ -76,8 +76,8 @@
 .select-all-mark {
     width: 50%;
     padding-inline: 10px;
-    background-color: rgb(235, 241, 248);
-    border: 2px solid #a18cdc;
+    background-color: rgb(235, 240, 248) !important;
+    border: 2px solid #7d8ba4 !important;
 }
 
 .nocolor {
