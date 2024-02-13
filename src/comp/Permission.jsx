@@ -58,18 +58,12 @@ const Permission = () => {
               </div>
               <div className="form-group p-2 m-0">
                 <label for="exampleInputPassword1">Description :</label>
-                <input ref={inputRefs[1]} 
-                  type="textbox"
-                  className="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Enter something here..."
-                  onKeyPress={(event) => handleKeyPress(event, 1)}
-                />
+                <textarea ref={inputRefs[1]} onKeyPress={(event) => handleKeyPress(event, 1)} class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Type something here...'></textarea>
                 
               </div>
               <div className="row">
                 <div className="col justify-content-end d-flex align-items-center">
-                  <button type="submit" class="btn btn-primary my-3">
+                  <button type="submit" class="btn btn-primary my-3 me-2">
                     Submit
                   </button>
                 </div>
