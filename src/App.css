@@ -243,7 +243,11 @@ ul li:hover .iconcolor {
 } 
 .bgcolordash
 {
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.737);
+=======
+  background-color: #EEE0B1
+>>>>>>> f4af1ee733e373f7cbd2e80d3fa80d557cdaacf0
 }
 
 

@@ -69,64 +69,64 @@ function StudentRegister() {
 
       <div className='container-fluid p-0  ' >
         <div className='row col-sm-12   '>
-<div className="row">
-          <div className="col">
-            <table class="table table-hover rounded-3 overflow-hidden  col-sm-12">
-              <thead className="bgcolordash  ">
-                <tr   className=" text-center ">
-                <th scope="col">SR.NO </th>
-                <th >GR NO.</th>
-                <th scope="col">Student Name</th>
-                <th scope="col">Father Name</th>
-                <th scope="col">Date Of Birth</th>
-                <th scope="col">Blood Group</th>
-                </tr>
-              </thead>
-              <tbody className='text-center' >
-                <tr> 
-                  <th scope="row">1</th>
-                  <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Francisco Chang</td>
-                <td>Mexico</td>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Roland Mendel</td>
-                <td>Austria</td>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Helen Bennett</td>
-                <td>UK</td>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="row">
+            <div className="col">
+              <table class="table table-hover rounded-3 overflow-hidden  col-sm-12">
+                <thead className="bgcolordash  ">
+                  <tr className=" text-center ">
+                    <th scope="col">SR.NO </th>
+                    <th >GR NO.</th>
+                    <th scope="col">Student Name</th>
+                    <th scope="col">Father Name</th>
+                    <th scope="col">Date Of Birth</th>
+                    <th scope="col">Blood Group</th>
+                  </tr>
+                </thead>
+                <tbody className='text-center' >
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
 
         </div>
       </div>
