@@ -1,3 +1,4 @@
+import { LuRefreshCcw } from "react-icons/lu";
 import React, { useState } from 'react';
 
 const generateCaptcha = () => {
@@ -31,15 +32,20 @@ const Captcha = () => {
   };
 
   return (
+    <>
     <div>
-      <p>Please enter the CAPTCHA code:</p>
-      <div className='d-flex gap-3'>
-        <input type="text" value={inputValue} onChange={handleInputChange} className='inputit w-50 mx-2 form-control'/>
-        <button onClick={refreshCaptcha}>Refresh</button>
+      {/* <p>Please enter the CAPTCHA code:</p> */}
+      <div className='d-flex w-100 gap-3 d-flex align-items-center'>
+    <div className="" >
+        <input type="text" placeholder='Please enter the CAPTCHA code :' value={inputValue} onChange={handleInputChange} className='inputit w-100 form-control pe-3 mt-3 ' style={{marginLeft : "12px" , width : "160%" }}/>
+        </div>
+        <button onClick={refreshCaptcha} className="mt-3"><LuRefreshCcw/></button>
       </div>
-      <p>{captcha}</p>
-      {isCaptchaCorrect ? <p style={{ color: 'green' }}>Captcha correct!</p> : null}
+      <p className="ms-3">{captcha}</p>
+     {isCaptchaCorrect ? <p style={{ color: 'green' }}>Captcha correct!</p> : null}
     </div>
+   
+    </>
   );
 };
 

@@ -8,6 +8,7 @@ import Calendar from 'react-calendar';
 // import React, { useState } from "react";
 import Chart from "react-apexcharts";
 import '../assets/styledashboradcss/dashborad.css';
+import { IoPerson } from "react-icons/io5";
 
 
 function Dashborad() {
@@ -84,7 +85,7 @@ function Dashborad() {
             <div className='col-sm-3   ' >
             <div className=' fourbgcolorhead  mx-2 d-flex rounded-3 textcenter'>
               <div  style={{backgroundColor:"#280D3B"}} className='rounded-3 d-flex px-3  w-100 align-items-center justify-content-evenly gap-2 card-height' >
-                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
+                <FaChalkboardTeacher className=' fs-3 ' /> <span className=' fw-bold '>Total Teachers  : <span>60</span></span>
               </div>
               </div>
             </div>
@@ -92,7 +93,7 @@ function Dashborad() {
             <div className='col-sm-3   ' >
             <div className='mx-2 d-flex rounded-3 textcenter'>
               <div style={{backgroundColor:"#EEE0B1"}} className='d-flex px-3 text-dark w-100 align-items-center justify-content-evenly gap-2 card-height rounded-3' >
-                <PiStudentFill className=' fs-3 ' /> <span className=' fw-bold '>Total student : <span>5400</span></span>
+                <IoPerson className=' fs-3 ' /> <span className=' fw-bold '>Total Staff : <span>70</span></span>
               </div>
               </div>
             </div>
