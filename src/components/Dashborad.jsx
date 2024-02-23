@@ -26,11 +26,11 @@ function Dashborad() {
     },
     series: [
       {
-        name: "People Born",
+        name: "Boys",
         data: [30, 40, 45, 50, 49, 60, 70, 91],
       },
       {
-        name: "People Died",
+        name: "Girls",
         data: [3, 60, 35, 80, 49, 70, 20, 81],
       },
     ],
