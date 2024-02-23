@@ -36,7 +36,7 @@ function Registration() {
     
   return (  
     <>
-       <h3 className='text-center text-decoration-underline my-3 pt-2 py-2 '>Student Registration Form</h3>
+       <h4 className='text-center text-decoration-underline my-3 pt-2 py-2 '>Student Registration Form</h4>
         <div className='p-3 rounded m-3 shadow bg-white border'>
 
           <div className="row  ">

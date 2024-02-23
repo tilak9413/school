@@ -2,10 +2,10 @@ import React from 'react'
 
 function Entranceexam() {
   return (
-    <div className='m-3   '>
+    <div className='m-3 '>
       <div className=''>
         <div >
-          <h5 className='text-success my-3 fw-semibold'>Entrance Exam Result :</h5>
+          <h6 className='textcolor my-3 fw-semibold '>Entrance Exam Result :</h6>
           
           <div className='col-12  d-flex justify-content-center '>
             <div className="col-8  border rounded-3 overflow-hidden">
@@ -50,7 +50,7 @@ function Entranceexam() {
         </div>
 <hr />
         <div>
-          <h5 className='text-success my-3 fw-semibold'>Entrance Exam Schedule :</h5>
+          <h6 className='textcolor my-3 fw-semibold '>Entrance Exam Schedule :</h6>
           <p ><big className='text-decoration-underline fw-medium'>Date and Time</big> :<span className='fs-5'> On Monday i.e. ( 22 / 01 / 2024 ) from 10:30 am to 12:30 pm .</span></p>
           <p ><big className='text-decoration-underline fw-medium'>Date and Time</big> :<span className='fs-5'> Online . At School’s  Official Website</span>(www.www.w...w)</p>
           <p ><big className='text-decoration-underline fw-medium'>Duration</big> :<span className='fs-5'> 2 Hours ( 120 Minutes )</span></p>
