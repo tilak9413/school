@@ -37,7 +37,7 @@ const Attendancestaff = (props) => {
                                         <input type="date" class="form-control border-2 selectbg-2 text-black-100 w-75" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" />
                                         {/* <input type="date" className='inputdate selectbg-2 text-black-100 w-75' id="html" /> */}
                                         {/* <button for="html" className='ps-3  pt-2 bg-success  pb-2 pe-3 ms-1 rounded-2  text-white fw-5 '>Load</button> */}
-                                        <button type="button" class="btn ms-1  text-white fw-5 btn-success ">Load</button>
+                                        <button type="button " class="btn ms-1 mb-0 text-white fw-5 btn-success ">Load</button>
                                     </div>
                                 </div>
 
@@ -76,7 +76,7 @@ const Attendancestaff = (props) => {
                                                 <input type="text" class="form-control border-2 selectbg-2 text-black-100 w-75" placeholder="Search For Staff" aria-label="Username" aria-describedby="basic-addon1" />
                                                 {/* <input type="text" placeholder='Search For Student' className='inputdate selectbg-2 text-black-100 w-75' id="html" /> */}
                                                 {/* <button for="html" className='p-2  rounded-2 bg-success  '>Search</button> */}
-                                                <button type="button" class="btn ms-1 text-white fw-5 btn-success ">Search</button>
+                                                <button type="button" class="btn ms-1 mb-0 text-white fw-5 btn-success ">Search</button>
                                             </div>
                                         </div>
 
@@ -112,7 +112,7 @@ const Attendancestaff = (props) => {
                                             <td ><img className='profileimg p-0 img' src="public/image/profile.png" alt="" /> Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='status bg-success'>Present</button></td>
+                                            <td ><button className='status bg-success btn btn-sm mb-0 bg-opacity-50'>Present</button></td>
                                             <td><button className=' text-success fw-bold'>Present</button><button className=' text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
@@ -120,7 +120,7 @@ const Attendancestaff = (props) => {
                                             <td><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='status bg-success'>Present</button></td>
+                                            <td ><button className='status btn btn-sm mb-0 bg-success bg-opacity-50'>Present</button></td>
                                             <td><button className=' text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
@@ -128,7 +128,7 @@ const Attendancestaff = (props) => {
                                             <td><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='AbsentStatus bg-danger'>Absent</button></td>
+                                            <td ><button className='AbsentStatus btn btn-sm mb-0 bg-danger bg-opacity-50'>Absent</button></td>
                                             <td><button className=' text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
@@ -136,7 +136,7 @@ const Attendancestaff = (props) => {
                                             <td><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td>Mohit Kumar</td>
                                             <td>9 th</td>
-                                            <td ><button className='status bg-success'>Present</button></td>
+                                            <td ><button className='status btn btn-sm mb-0 bg-success bg-opacity-50'>Present</button></td>
                                             <td><button className='text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
                                         </tr>
                                         <tr>
@@ -144,8 +144,8 @@ const Attendancestaff = (props) => {
                                             <td className='ps-3 pe-3' ><img className='profileimg p-0' src="public/image/profile.png" alt="" />Mohit Kumar</td>
                                             <td className='ps-3 pe-3'>Mohit Kumar</td>
                                             <td className='ps-3 pe-3'>9 th</td>
-                                            <td className='ps-3 pe-3'><button className='status bg-danger'>Absent</button></td>
-                                            <td className='ps-3 pe-3'><button className='text-success fw-bold'>Present</button><button className='text-danger fw-bold'>Absent</button><button className='text-primary fw-bold'>Half Day</button></td>
+                                            <td className='ps-3  pe-3'><button className=' btn btn-sm mb-0 status bg-danger bg-opacity-50'>Absent</button></td>
+                                            <td className='ps-3 pe-3 mb-0'><button className='text-success bg-opacity-50 fw-bold  '>Present</button><button className='text-danger   fw-bold'>Absent</button><button className='text-primary fw-bold '>Half Day</button></td>
                                         </tr>
 
                                     </table>

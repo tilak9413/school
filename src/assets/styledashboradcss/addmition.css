@@ -11,8 +11,9 @@
 }
 
 .activeaddmition{
-    color: rgb(255, 255, 255);
+    color:#561b80;
     text-decoration: underline;
+    font-weight: 700;
 }
 .colors
 {
