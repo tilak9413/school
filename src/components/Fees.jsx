@@ -1,11 +1,10 @@
 import React from 'react'
+import '../assets/styledashboradcss/Fees.css'
 
 function Fees() {
   return (
     <>
-       <div className="box">
-        
-       </div>
+      
     </>
   )
 }
